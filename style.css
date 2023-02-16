@@ -1,0 +1,159 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  margin: 10px;
+  padding: 10px;
+  border: 20px;
+  background-image: url(Header.svg);
+  max-height: 100vh;
+  max-width: auto;
+}
+
+a {
+  color:#344563;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: none;
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #6070FF;
+}
+
+.toggleNav {
+  display: none;
+}
+
+img {
+  width: 10%;
+  height: auto;
+
+}
+
+.logo {
+  border: 1px solid orange;
+  display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+.header {
+  max-width: 100%;
+  border: 1px solid yellow;
+  display: flex;
+
+}
+
+.wrapper {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.info {
+  border: 1px solid blue;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.introduction {
+  border: 1px solid red;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  
+    
+}
+
+section {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: none;
+  padding: 20px;
+  margin: 20px 0;
+  color: #091E42;
+  font-weight: 100;
+}
+
+.flex-nav ul {
+  border: 1px solid black;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-nav li {
+  flex: 3
+}
+
+.flex-nav .social {
+  flex: 1
+}
+
+@media all and (max-width:1000px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .flex-nav li {
+    flex: 1 1 50%
+  }
+
+  .flex-nav .media {
+    flex: 1 1 25%;
+  }
+}
+.flex-nav .header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (max-width:500px) {
+  .flex-nav li {
+    flex-basis: 100%;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header > * {
+    order:1000;
+  }
+
+  .flex-nav{
+    order:1;
+  }
+
+  .toggleNav {
+    display: block;
+  }
+
+  .flex-nav ul {
+    display: none;
+  }
+}

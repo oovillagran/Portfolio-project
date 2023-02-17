@@ -17,7 +17,8 @@ body {
   margin: 10px;
   padding: 10px;
   border: 20px;
-  background-image: url(Header.svg);
+  background-image: url(images/Header.svg);
+  background-repeat: none;
   max-height: 100vh;
   max-width: auto;
 }
@@ -26,7 +27,7 @@ a {
   color: #344563;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 15px;
   letter-spacing: 2px;
   text-decoration: none;
   background: none;
@@ -64,8 +65,9 @@ img {
 
 h1 {
   font-family: 'Poppins', sans-serif;
+  color: #091e42;  
   font-size: 48px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 60px;
 }
 
@@ -74,10 +76,13 @@ h6 {
   font-size: 16px;
 }
 
-.logo {
+
+.name {
   /* border: 1px solid orange; */
   display: flex;
   margin-left: 100px;
+  font-weight: 800;
+  color: #6070ff;
 }
 
 li {
@@ -100,18 +105,54 @@ li {
 }
 
 .wrapper {
-  /* border: 1px solid green; */
+  border: 1px solid green;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   justify-content: center;
+  
+}
+
+.letsconect {
+  border: 1px solid red;
+  display: flex;
+  background-image: url(./images/Social\ Media.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2vw;
+  left: 0;
+  top: 0;
+  align-self: flex-start;
+  margin-top: 0px;
+  width: 100%;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.sicons {
+  border: 1px solid black;
+  display: flex;
+  background-image: url(./images/social\ media\ icons.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.5vw;
+  left: 0;
+  top: 0;
+  align-self: flex-start;
+  margin-top: 0px;
+  margin-left: 250px;
+  margin-right: 250px;
+  width: 100%;
 }
 
 .introduction {
   /* border: 1px solid red; */
-  width: 60%;
-  margin-left: calc(60% - 500px);
+  
+  margin-left: 250px;
+  margin-right: 250px;
 }
+
+
 
 .info ul {
   /* border: 1px solid blue; */

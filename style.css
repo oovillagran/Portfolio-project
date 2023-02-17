@@ -129,12 +129,12 @@ li {
   .flex-nav ul {
     flex-wrap: wrap;
     display: none;
-      }
+  }
 
   .flex-nav li {
     flex-basis: 100%;
   }
- 
+
   .wrapper {
     display: block;
   }
@@ -151,5 +151,4 @@ li {
 }
 
 /* @media all and (min-width: 768px) {
-    
 } */

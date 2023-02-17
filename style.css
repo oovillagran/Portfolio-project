@@ -50,7 +50,7 @@ a:disabled {
 }
 
 a:active {
-  background: #2230D2;
+  background: #2230d2;
 }
 
 .toggleNav {
@@ -97,10 +97,10 @@ li {
   display: flex;
   margin: 0;
   padding: 0;
-  }
+}
 
 .wrapper {
-    /* border: 1px solid green; */
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -108,13 +108,13 @@ li {
 }
 
 .introduction {
-    /* border: 1px solid red; */
+  /* border: 1px solid red; */
   width: 60%;
   margin-left: calc(60% - 500px);
 }
 
 .info ul {
-    /* border: 1px solid blue; */
+  /* border: 1px solid blue; */
   display: flex;
   color: #505f79;
   width: 60%;
@@ -125,21 +125,21 @@ li {
   width: 30px;
 }
 
-@media (min-width:375px) and (max-width:768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .flex-nav ul {
     flex-wrap: wrap;
     display: none;
-    }
-    
+      }
+
   .flex-nav li {
     flex-basis: 100%;
   }
-  
+ 
   .wrapper {
     display: block;
   }
 
-  .introduction{
+  .introduction {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,7 +150,6 @@ li {
   }
 }
 
-
-@media all and (min-width:768px) {
+/* @media all and (min-width: 768px) {
     
-}
+} */

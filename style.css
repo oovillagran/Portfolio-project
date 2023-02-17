@@ -18,7 +18,7 @@ body {
   padding: 10px;
   border: 20px;
   background-image: url(images/Header.svg);
-  background-repeat: none;
+  background-repeat: no-repeat;
   max-height: 100vh;
   max-width: auto;
 }
@@ -112,7 +112,7 @@ li {
 }
 
 .wrapper {
-  /*border: 1px solid green;*/
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -120,7 +120,7 @@ li {
 }
 
 .letsconect {
-  /*border: 1px solid red;*/
+  /* border: 1px solid red; */
   display: flex;
   background-image: url(./images/Social\ Media.svg);
   background-repeat: no-repeat;
@@ -130,10 +130,10 @@ li {
   margin-top: 0;
   width: 72%;
   margin-left: 14%;
-  }
+}
 
 .sicons {
-  /*border: 1px solid black;*/
+  /* border: 1px solid black; */
   display: flex;
   background-image: url(./images/social\ media\ icons.svg);
   background-repeat: no-repeat;
@@ -146,7 +146,7 @@ li {
 }
 
 .introduction {
-  /*border: 1px solid red;*/
+  /* border: 1px solid red; */
   margin-left: 14%;
   width: 72%;
 }

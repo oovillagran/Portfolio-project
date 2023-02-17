@@ -186,3 +186,10 @@ If you like this project feel free to make any comment, all contributions are we
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+📝 License
+This project is MIT licensed.
+
+NOTE: we recommend using the MIT license - you can set it up quickly by using templates available on GitHub. You can also use any other license if you wish.
+
+

@@ -18,7 +18,7 @@ body {
   padding: 10px;
   border: 20px;
   background-image: url(images/Header.svg);
-  background-repeat: none;
+  background-repeat: no-repeat;
   max-height: 100vh;
   max-width: auto;
 }

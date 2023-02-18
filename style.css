@@ -172,6 +172,7 @@ li {
 
   .hamburguer {
     display: block;
-    width: 50px;
+    width: 75px;
+    cursor: pointer;
   }
 }

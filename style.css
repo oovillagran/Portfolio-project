@@ -5,6 +5,10 @@
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
 }
 
 a {
@@ -84,7 +88,6 @@ li {
   display: flex;
   margin-top: 0;
   background: #fff;
-  /* justify-content: space-between; */
 }
 
 .flex-nav ul {
@@ -92,14 +95,6 @@ li {
   display: flex;
   margin: 0;
   padding: 0;
-}
-
-.wrapper {
-  /* border: 1px solid green; */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: center;
 }
 
 .letsconect {

@@ -1,26 +1,10 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-* *::before *::after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  margin: 10px;
-  padding: 10px;
-  border: 20px;
+.wrapper {
+  position: absolute;
+  background-color: #fff;
   background-image: url(images/Header.svg);
+  background-size: contain;
+  background-position: top;
   background-repeat: no-repeat;
-  max-height: 100vh;
-  max-width: auto;
 }
 
 a {
@@ -63,7 +47,6 @@ p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 20px;
-  letter-spacing: 2px;
 }
 
 img {
@@ -99,9 +82,9 @@ li {
 .header {
   /* border: 1px solid yellow; */
   display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: space-between;
+  margin-top: 0;
+  background: #fff;
+  /* justify-content: space-between; */
 }
 
 .flex-nav ul {
@@ -125,7 +108,7 @@ li {
   background-image: url(./images/Social\ Media.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 2vw;
+  height: 30px;
   align-self: flex-start;
   margin-top: 0;
   width: 72%;
@@ -138,7 +121,7 @@ li {
   background-image: url(./images/social\ media\ icons.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 1.5vw;
+  height: 20px;
   align-self: flex-start;
   margin-top: 0;
   margin-left: 14%;
@@ -159,13 +142,8 @@ li {
   margin-left: calc(60% - 500px);
 }
 
-.media {
-  width: 30px;
-}
-
 .hamburguer {
   display: none;
-  cursor: pointer;
 }
 
 .bar {
@@ -177,7 +155,7 @@ li {
   background-color: #6070ff;
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 1024px) {
   .flex-nav ul {
     flex-wrap: wrap;
     display: none;
@@ -199,5 +177,6 @@ li {
 
   .hamburguer {
     display: block;
+    width: 50px;
   }
 }

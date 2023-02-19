@@ -49,6 +49,53 @@ a {
   text-align: center;
 }
 
+.seep {
+  font-family: 'Poppins', sans-serif;
+  color: #396df2;
+  background-color: #fff;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.foot .seep {
+  height: 40px;
+  padding: 10px;
+  border: 1.5px solid #396df2;
+  border-radius: 7px;
+  cursor: pointer;
+  background: #fff;
+  width: 25%;
+}
+
+.getmyr {
+  font-family: 'Poppins', sans-serif;
+  color: #6070ff;
+  background-color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-left: 14%;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1.5px solid #6070ff;
+  cursor: pointer;
+}
+
+.aboutme .seep {
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .port:hover,
 .foot .seep:hover,
 .allabout .getmyr:hover {
@@ -335,45 +382,6 @@ h6 {
   line-height: 16px;
 }
 
-.seep {
-  font-family: 'Poppins', sans-serif;
-  color: #396df2;
-  background-color: #fff;
-  font-size: 17px;
-  text-align: center;
-  font-weight: 500;
-  line-height: 24px;
-  margin-top: 20px;
-  margin-left: 0;
-}
-
-.foot .seep {
-  width: 115px;
-  height: 40px;
-  padding: 10px;
-  border: 1.5px solid #396df2;
-  border-radius: 7px;
-  cursor: pointer;
-  background: #fff;
-  width: 25%;
-}
-
-.getmyr {
-  font-family: 'Poppins', sans-serif;
-  color: #6070ff;
-  background-color: #fff;
-  font-size: 20px;
-  text-align: center;
-  font-weight: 500;
-  margin-top: 20px;
-  margin-left: 14%;
-  width: 200px;
-  height: 40px;
-  border-radius: 10px;
-  border: 1.5px solid #6070ff;
-  cursor: pointer;
-}
-
 .about {
   display: flex;
   flex-direction: column;
@@ -394,15 +402,6 @@ h6 {
 .pabout {
   margin-left: 14%;
   width: 72%;
-}
-
-.aboutme .seep {
-  width: 150px;
-  height: 40px;
-  padding: 10px;
-  border: 1px solid #6070ff;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 .knowledges {

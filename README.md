@@ -57,13 +57,6 @@
   </ul>
 </details>
 
-<details>
-<summary>Flexbox</summary>
-  <ul>
-    <li>Flexbox</li>
-  </ul>
-</details>
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
@@ -142,11 +135,11 @@ To run tests, execute the following command:
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Author1**
+👤 **Oscar Villagran**
 
 - GitHub: [@oovillagran](https://github.com/oovillagran)
 - Twitter: [@oovillagran](https://twitter.com/oovillagran)
-- LinkedIn: [linkedin.com/in/oscar-villagran-91b13859](https://linkedin.com/in/oscar-villagran-91b13859)
+- LinkedIn: [Oscar Villagran](https://www.linkedin.com/in/oovillagran/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -186,3 +179,16 @@ If you like this project feel free to make any comment, all contributions are we
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse comunity, especially reviewers guys, they do an excellent job. I thank my learning, morning session and standup partners for supporting me.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository) licensed.
+
+_NOTE: we recommend using the [MIT license]<a href="LICENSE.md">
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+

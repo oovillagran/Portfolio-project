@@ -49,8 +49,13 @@ a {
   text-align: center;
 }
 
-a:hover {
+.port:hover,
+.foot .seep:hover,
+.allabout .getmyr:hover {
   background-color: #6070ff;
+  color: #fff;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
 }
 
 a:enabled {
@@ -64,6 +69,24 @@ a:disabled {
 
 a:active {
   background: #2230d2;
+}
+
+a:focus,
+.foot .seep:focus,
+.allabout .getmyr:focus {
+  background-color: #2230d2;
+  color: #fff;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+a:disabled,
+.foot .seep:focus,
+.allabout .getmyr:focus {
+  background-color: #fff;
+  color: #5e6c84;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
 }
 
 .toggleNav {
@@ -96,6 +119,14 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #344563;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
 }
 
 h6 {
@@ -219,11 +250,30 @@ h6 {
   display: grid;
 }
 
+.tonic {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.canopy {
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #344563;
+}
+
 .experience {
   margin: 0;
   padding: 0;
   display: flex;
-  margin-right: 2rem;
+  align-items: center;
+  flex: 4;
+  list-style-type: disc;
 }
 
 .profilexp {
@@ -246,18 +296,19 @@ h6 {
 .sub {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .bed,
 .y2015 {
   color: #7a869a;
-  line-height: 52px;
+  line-height: 16px;
   font-size: 13px;
   font-weight: 600;
 }
 
 .bed {
-  margin-right: 2rem;
+  width: 200px;
 }
 
 .stack {
@@ -277,30 +328,34 @@ h6 {
 .js {
   padding: 2px 10px;
   border-radius: 10px;
-  color: #396df2;
+  color: #6070ff;
   background: #ebebff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
 }
 
 .seep {
   font-family: 'Poppins', sans-serif;
-  color: #6070ff;
+  color: #396df2;
   background-color: #fff;
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
   font-weight: 500;
+  line-height: 24px;
   margin-top: 20px;
   margin-left: 0;
-  width: 72%;
 }
 
 .foot .seep {
   width: 115px;
   height: 40px;
   padding: 10px;
-  border: 1.5px solid #6070ff;
-  border-radius: 10px;
+  border: 1.5px solid #396df2;
+  border-radius: 7px;
   cursor: pointer;
   background: #fff;
+  width: 25%;
 }
 
 .getmyr {
@@ -325,6 +380,10 @@ h6 {
   justify-content: center;
   width: 100%;
   margin-left: 1%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
 }
 
 .tabout {

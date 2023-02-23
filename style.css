@@ -297,7 +297,6 @@ ul {
 .experience {
   margin: 0;
   padding: 0;
-  display: flex;
   align-items: center;
   flex: 4;
   display: contents;
@@ -531,6 +530,17 @@ ul {
   font-weight: 400;
 }
 
+.get {
+  margin: auto;
+  height: 2.5rem;
+  padding: 0.625rem;
+  border: 1.5px solid #396df2;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: #fff;
+  width: 25%;
+}
+
 .contactme form li .get {
   height: 3rem;
   padding: 0.75rem;
@@ -541,10 +551,6 @@ ul {
   font-family: 'Poppins', sans-serif;
   font-size: 1.25rem;
   font-weight: 500;
-}
-
-.get {
-  margin: auto;
 }
 
 #survey {
@@ -582,16 +588,6 @@ ul {
   line-height: 1.5rem;
 }
 
-.get {
-  height: 2.5rem;
-  padding: 0.625rem;
-  border: 1.5px solid #396df2;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  background: #fff;
-  width: 25%;
-}
-
 @media (min-width: 375px) and (max-width: 1024px) {
   .wrapper::before {
     background-image: url(images/header-shapes\ mobile.svg);
@@ -611,9 +607,9 @@ ul {
   }
 
   .name {
-     margin-left: 2.5rem;
-    
+    margin-left: 2.5rem;
   }
+
   .introduction {
     display: flex;
     flex-direction: column;
@@ -662,7 +658,7 @@ ul {
     font-size: 1rem;
   }
 
-  li.bed::marker{
+  li.bed::marker {
     color: #c1c7d0;
     display: none;
   }
@@ -692,8 +688,8 @@ ul {
     width: 100%;
     max-height: 400px;
   }
-  
-  .tabout{
+
+  .tabout {
     margin-left: 6%;
   }
 
@@ -704,7 +700,7 @@ ul {
   .getmyr {
     margin-left: 6%;
   }
-  
+
   .sicons {
     margin-left: 6%;
   }
@@ -731,16 +727,16 @@ ul {
     flex-direction: row;
     width: 100%;
   }
-  
+
   .appimg {
     width: 20%;
   }
-  
+
   .contact {
     justify-content: space-between;
     margin-top: 10%;
   }
-   
+ 
   .contact_exp {
     width: 95%;
     margin: 2.5%;
@@ -749,7 +745,7 @@ ul {
   .touch {
     padding-left: 0;
   }
-  
+
   .get {
     width: 50%;
   }

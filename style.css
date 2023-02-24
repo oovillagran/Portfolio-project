@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+.backing {
+  background: #f7f7f9;
+  position: relative;
+}
+
 .wrapper::before {
   content: "";
   position: absolute;
@@ -26,6 +31,10 @@ body {
   z-index: -1;
 }
 
+.modal {
+  background: #fff;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -39,11 +48,11 @@ a {
   color: #344563;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 2px;
+  font-size: 0.938rem;
+  letter-spacing: 0.125rem;
   text-decoration: none;
   background: none;
-  padding: 5px 5px;
+  padding: 0.313rem 0.313rem;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -53,11 +62,11 @@ a {
   font-family: 'Poppins', sans-serif;
   color: #396df2;
   background-color: #fff;
-  font-size: 17px;
+  font-size: 1.063rem;
   text-align: center;
   font-weight: 500;
-  line-height: 24px;
-  margin-top: 20px;
+  line-height: 1.5rem;
+  margin-top: 1.25rem;
   margin-left: 0;
 }
 
@@ -68,7 +77,7 @@ a {
   border-radius: 7px;
   cursor: pointer;
   background: #fff;
-  width: 25%;
+  width: 30%;
 }
 
 .getmyr {
@@ -79,7 +88,7 @@ a {
   text-align: center;
   font-weight: 500;
   margin-top: 20px;
-  margin-left: 14%;
+  margin-left: 12.5%;
   width: 200px;
   height: 40px;
   border-radius: 10px;
@@ -131,7 +140,8 @@ p {
   color: #344563;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 img {
@@ -142,17 +152,23 @@ img {
 h1 {
   font-family: 'Poppins', sans-serif;
   color: #091e42;
-  font-size: 48px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 3.25rem;
+}
+
+.about {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   color: #172b4d;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 3.25rem;
 }
 
 h3 {
@@ -171,13 +187,17 @@ h6 {
 .name {
   /* border: 1px solid orange; */
   display: flex;
-  margin-left: 100px;
+  margin-left: 6.25rem;
   font-weight: 800;
   color: #6070ff;
 }
 
 .mhead {
   list-style-type: none;
+}
+
+ul {
+  /* list-style: none; */
 }
 
 .header {
@@ -203,8 +223,8 @@ h6 {
   height: 30px;
   align-self: flex-start;
   margin-top: 0;
-  width: 72%;
-  margin-left: 14%;
+  width: 76%;
+  margin-left: 12.5%;
 }
 
 .sicons {
@@ -216,8 +236,8 @@ h6 {
   height: 20px;
   align-self: flex-start;
   margin-top: 0;
-  margin-left: 14%;
-  width: 72%;
+  margin-left: 12.5%;
+  width: 76%;
 }
 
 .introduction {
@@ -247,33 +267,6 @@ h6 {
   background-color: #6070ff;
 }
 
-@media (min-width: 375px) and (max-width: 1024px) {
-  .flex-nav ul {
-    flex-wrap: wrap;
-    display: none;
-  }
-
-  .flex-nav li {
-    flex-basis: 100%;
-  }
-
-  .wrapper {
-    display: block;
-  }
-
-  .introduction {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .hamburguer {
-    display: block;
-    width: 75px;
-    cursor: pointer;
-  }
-}
-
 /* Second-milestone */
 
 .exp {
@@ -285,18 +278,18 @@ h6 {
 }
 
 .tonic {
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
   font-weight: 700;
-  color: #172b4d;
+  color: #091e42;
 }
 
 .canopy {
-  flex: 1;
+  flex: 0.5;
   justify-content: center;
   align-content: center;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
   font-weight: 600;
   color: #344563;
 }
@@ -304,23 +297,24 @@ h6 {
 .experience {
   margin: 0;
   padding: 0;
-  display: flex;
   align-items: center;
   flex: 4;
-  list-style-type: disc;
+  display: contents;
 }
 
 .profilexp {
-  padding: 1rem 1rem 1.5rem 1rem;
+  padding: 1rem 0.5rem 1.5rem 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   border-radius: 1rem;
   border: 1px solid #dfe1e6;
+  background: #fff;
 }
 
 .banner {
-  width: 100%;
+  width: 50%;
 }
 
 .mainfo {
@@ -329,20 +323,22 @@ h6 {
 
 .sub {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .bed,
 .y2015 {
-  color: #7a869a;
-  line-height: 16px;
-  font-size: 13px;
-  font-weight: 600;
+  color: #c1c7d0;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  display: list-item;
+  list-style: disc;
 }
 
 .bed {
-  width: 200px;
+  width: 10rem;
 }
 
 .stack {
@@ -355,45 +351,69 @@ h6 {
 .sframw,
 .sskill {
   margin-left: 5%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
 }
 
 .html,
 .css,
 .js {
-  padding: 2px 10px;
-  border-radius: 10px;
+  padding: 0.125rem 0.625rem;
+  border-radius: 0.625rem;
   color: #6070ff;
   background: #ebebff;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1rem;
 }
 
-.about {
+.allaboutme {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   width: 100%;
   margin-left: 1%;
-  font-size: 15px;
+  font-size: 0.938rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
   color: #344563;
+  flex-basis: 37rem;
+  background: #fff;
+  border-top-right-radius: 5rem;
 }
 
 .tabout {
-  margin-left: 14%;
-  width: 72%;
+  margin-left: 12.5%;
+  width: 76%;
 }
 
 .pabout {
-  margin-left: 14%;
-  width: 72%;
+  margin-left: 12.5%;
+  width: 76%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.allabout {
+  width: 70%;
+  flex-basis: 37rem;
 }
 
 .knowledges {
-  margin: 6px 0;
-  padding: 24px 0;
+  margin: 0.375rem 0;
+  padding: 1.5rem 0;
+  flex-basis: 38rem;
+  width: 70%;
+  align-items: left;
+  list-style-type: none;
+}
+
+.app {
+  display: flex;
+  align-items: left;
+  justify-content: start;
+  gap: 1rem;
 }
 
 .zleng {
@@ -406,10 +426,10 @@ h6 {
 
 .app li {
   align-items: center;
-  gap: 2rem;
-  border-radius: 10px;
-  margin: 10px 0;
-  padding: 10px 12px;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  margin: 0.75rem 0;
+  padding: 0.5rem 0.75rem;
 }
 
 .framw,
@@ -460,6 +480,20 @@ h6 {
   width: 0.5rem;
 }
 
+.contact_ask {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+}
+
+.contact_exp {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  width: 60%;
+  margin: 20%;
+}
+
 .contact_ask,
 .contact_exp {
   color: #fff;
@@ -495,17 +529,27 @@ h6 {
   font-weight: 400;
 }
 
+.get {
+  margin: auto;
+  height: 2.5rem;
+  padding: 0.625rem;
+  border: 1.5px solid #396df2;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: #fff;
+  width: 25%;
+}
+
 .contactme form li .get {
-  width: 162px;
-  height: 48px;
-  padding: 12px;
+  height: 3rem;
+  padding: 0.75rem;
   color: #6070ff;
+  background: #fff;
   cursor: pointer;
   margin: 18px 0;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
-  text-align: center;
 }
 
 #survey {
@@ -518,6 +562,190 @@ h6 {
 .ihtml,
 .icss {
   display: flex;
+  flex-direction: column;
   background: #f7f7f9;
-  width: 95%;
+  width: 20%;
+  justify-content: flex-start;
+}
+
+.appimg {
+  width: 50%;
+}
+
+.appt {
+  font-size: 0.938rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  text-align: left;
+}
+
+.touch {
+  padding-left: 40%;
+  color: #396df2;
+  font-size: 1.063rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 375px) and (max-width: 1024px) {
+  .wrapper::before {
+    background-image: url(images/header-shapes\ mobile.svg);
+  }
+
+  .flex-nav ul {
+    flex-wrap: wrap;
+    display: none;
+  }
+
+  .flex-nav li {
+    flex-basis: 100%;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  .name {
+    margin-left: 2.5rem;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .hamburguer {
+    display: block;
+    width: 75px;
+    cursor: pointer;
+  }
+
+  .mainfo {
+    padding: 0;
+  }
+
+  .profilexp {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .sub {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+  }
+
+  .canopy {
+    font-size: 1rem;
+    width: 8rem;
+  }
+
+  .bed {
+    width: 8rem;
+    font-size: 1rem;
+  }
+
+  .y2015 {
+    font-size: 1rem;
+  }
+
+  li.bed::marker {
+    color: #c1c7d0;
+    display: none;
+  }
+
+  .foot .seep {
+    width: 45%;
+  }
+
+  .experience {
+    display: contents;
+  }
+
+  .exp {
+    align-items: center;
+    max-width: 1104px;
+    column-gap: 46px;
+    padding: 1.5rem;
+  }
+
+  .allaboutme {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .allabout {
+    width: 100%;
+    max-height: 400px;
+  }
+
+  .tabout {
+    margin-left: 6%;
+  }
+
+  .letsconect {
+    margin-left: 6%;
+  }
+
+  .getmyr {
+    margin-left: 6%;
+  }
+
+  .sicons {
+    margin-left: 6%;
+  }
+
+  .pabout {
+    margin-left: 6%;
+    width: 88%;
+  }
+
+  .knowledges {
+    width: 90%;
+  }
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .ijs,
+  .ihtml,
+  .icss {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .appimg {
+    width: 20%;
+  }
+
+  .contact {
+    justify-content: space-between;
+    margin-top: 10%;
+  }
+
+  .contact_exp {
+    width: 95%;
+    margin: 2.5%;
+  }
+
+  .touch {
+    padding-left: 0;
+  }
+
+  .get {
+    width: 50%;
+  }
 }

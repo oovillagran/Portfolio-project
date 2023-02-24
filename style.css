@@ -334,7 +334,6 @@ ul {
   font-size: 1.125rem;
   font-weight: 400;
   display: list-item;
-  list-style-position: inside;
   list-style: disc;
 }
 
@@ -736,7 +735,7 @@ ul {
     justify-content: space-between;
     margin-top: 10%;
   }
- 
+
   .contact_exp {
     width: 95%;
     margin: 2.5%;

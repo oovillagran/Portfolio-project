@@ -342,9 +342,7 @@ ul {
 }
 
 .stack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  height: 50px;
 }
 
 .sleng,
@@ -359,6 +357,8 @@ ul {
 .html,
 .css,
 .js {
+  float: left;
+  margin-right: 5%;
   padding: 0.125rem 0.625rem;
   border-radius: 0.625rem;
   color: #6070ff;
@@ -366,6 +366,10 @@ ul {
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 1rem;
+}
+
+.html {
+  margin-left: 15%;
 }
 
 .allaboutme {

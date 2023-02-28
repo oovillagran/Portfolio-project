@@ -107,7 +107,8 @@ a {
 
 .port:hover,
 .foot .seep:hover,
-.allabout .getmyr:hover {
+.allabout .getmyr:hover,
+.buttonget .get:hover {
   background-color: #6070ff;
   color: #fff;
   animation-fill-mode: forwards;
@@ -116,7 +117,8 @@ a {
 
 a:focus,
 .foot .seep:focus,
-.allabout .getmyr:focus {
+.allabout .getmyr:focus,
+.buttonget .get:focus {
   background-color: #2230d2;
   color: #fff;
   animation-fill-mode: forwards;
@@ -125,7 +127,8 @@ a:focus,
 
 a:disabled,
 .foot .seep:disabled,
-.allabout .getmyr:disabled {
+.allabout .getmyr:disabled,
+.buttonget .get:disabled {
   background-color: #fff;
   color: #5e6c84;
   animation-fill-mode: forwards;

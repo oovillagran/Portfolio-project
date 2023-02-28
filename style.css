@@ -590,8 +590,24 @@ ul {
   line-height: 1.5rem;
 }
 
-#email {
-  color: orange;
+input::placeholder {
+  opacity: 1;
+  color: #172b4d;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.063rem;
+  line-height: 1.25rem;
+  padding: 1rem;
+}
+
+textarea::placeholder {
+  opacity: 1;
+  color: #b3bac5;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.938rem;
+  line-height: 1.5rem;
+  padding: 1rem;
 }
 
 @media (min-width: 375px) and (max-width: 1024px) {

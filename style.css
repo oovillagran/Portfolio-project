@@ -548,7 +548,7 @@ ul {
   cursor: pointer;
   margin: 18px 0;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.063rem;
   font-weight: 500;
 }
 
@@ -585,6 +585,10 @@ ul {
   font-size: 1.063rem;
   font-weight: 500;
   line-height: 1.5rem;
+}
+
+#email {
+  color: orange;
 }
 
 @media (min-width: 375px) and (max-width: 1024px) {

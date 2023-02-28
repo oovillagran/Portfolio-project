@@ -105,6 +105,29 @@ a {
   cursor: pointer;
 }
 
+.get {
+  margin: auto;
+  height: 2.5rem;
+  padding: 0.625rem;
+  border: 1.5px solid #396df2;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: #fff;
+  width: 25%;
+}
+
+.contactme form li .get {
+  height: 3rem;
+  padding: 0.75rem;
+  color: #6070ff;
+  background: #fff;
+  cursor: pointer;
+  margin: 18px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.063rem;
+  font-weight: 500;
+}
+
 .port:hover,
 .foot .seep:hover,
 .allabout .getmyr:hover,
@@ -123,6 +146,16 @@ a:focus,
   color: #fff;
   animation-fill-mode: forwards;
   animation-delay: 0s;
+}
+
+.contactme form li input {
+  width: 95%;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  margin: 10px 0;
+  height: 48px;
+  padding: 0;
 }
 
 a:disabled,
@@ -505,16 +538,6 @@ ul {
   text-align: center;
 }
 
-.contactme form li input {
-  width: 95%;
-  border-radius: 8px;
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  margin: 10px 0;
-  height: 48px;
-  padding: 0;
-}
-
 .contactme form li label {
   display: block;
   color: #fff;
@@ -532,29 +555,6 @@ ul {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 400;
-}
-
-.get {
-  margin: auto;
-  height: 2.5rem;
-  padding: 0.625rem;
-  border: 1.5px solid #396df2;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  background: #fff;
-  width: 25%;
-}
-
-.contactme form li .get {
-  height: 3rem;
-  padding: 0.75rem;
-  color: #6070ff;
-  background: #fff;
-  cursor: pointer;
-  margin: 18px 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.063rem;
-  font-weight: 500;
 }
 
 #survey {

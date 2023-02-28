@@ -201,33 +201,38 @@
         <p class="contact_exp">If you have an application you are interested in developing, a feature 
           that you need built or a project that needs coding. I’d love to help with it</p>
         <!-- Form -->
-        <form id="survey-form" action="/index.html">
+        <form action="https://formspree.io/f/xdovzepk" method="post">
           <ul id="survey">
             <!-- Name field -->
             <li id="name">
               <label id="name-label" for="name"></label>
-              <input id="name" type="text" autocomplete="off" placeholder="Yeremias" required>
+              <input id="name" name="name" type="text" autocomplete="off" placeholder="Yeremias" required maxlength="30">
             </li>
             <!-- Email field -->
             <li id="email">
               <label id="email-label" for="email"></label>
-              <input id="email" type="email" autocomplete="off" placeholder="natajayanj14@gmail.com" required>
+              <input  name="email" id="email" type="email" autocomplete="off" placeholder="natajayanj14@gmail.com" required>
             </li>
             <!-- Textarea -->
             <li id="message">
               <label style="margin-top: 20px;" for="msg"></label>
-              <textarea class="textarea" name="review" id="comment" autocomplete="off" cols="30" rows="4" placeholder="Write your message here"></textarea>
+              <textarea class="textarea" name="msg" id="msg"  autocomplete="off" cols="30" rows="4" maxlength="500" placeholder="Write your message here"></textarea>
             </li>
             <!-- Get in Touch-->
             <li id="touch" class="touch">
               <div class="buttonget">
-                <button type="button" id="Get-in-Touch" class="get">Get in touch</button>
+                <button type="submit" id="Get-in-Touch" class="get">Get in touch</button>
               </div>
               </li>
           </ul>
         </form>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="footer_bar"></div>
+    </footer>
+    
   </div>
 </body>
 </html>

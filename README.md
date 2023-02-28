@@ -82,7 +82,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+To get a local copy up and running, follow the following steps steps.
 
 ### Prerequisites
 
@@ -140,6 +140,11 @@ To run tests, execute the following command:
 - GitHub: [@oovillagran](https://github.com/oovillagran)
 - Twitter: [@oovillagran](https://twitter.com/oovillagran)
 - LinkedIn: [Oscar Villagran](https://www.linkedin.com/in/oovillagran/)
+
+👤 **Hafed Efheij**
+
+- GitHub: [@Hafed](https://github.com/hafedefheij)
+- LinkedIn: [@Hafed](https://www.linkedin.com/in/hafedefheij)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

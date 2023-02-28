@@ -105,9 +105,33 @@ a {
   cursor: pointer;
 }
 
+.get {
+  margin: auto;
+  height: 2.5rem;
+  padding: 0.625rem;
+  border: 1.5px solid #396df2;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: #fff;
+  width: 25%;
+}
+
+.contactme form li .get {
+  height: 3rem;
+  padding: 0.75rem;
+  color: #6070ff;
+  background: #fff;
+  cursor: pointer;
+  margin: 18px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.063rem;
+  font-weight: 500;
+}
+
 .port:hover,
 .foot .seep:hover,
-.allabout .getmyr:hover {
+.allabout .getmyr:hover,
+.buttonget .get:hover {
   background-color: #6070ff;
   color: #fff;
   animation-fill-mode: forwards;
@@ -116,16 +140,28 @@ a {
 
 a:focus,
 .foot .seep:focus,
-.allabout .getmyr:focus {
+.allabout .getmyr:focus,
+.buttonget .get:focus {
   background-color: #2230d2;
   color: #fff;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
 
+.contactme form li input {
+  width: 95%;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  margin: 10px 0;
+  height: 48px;
+  padding: 0;
+}
+
 a:disabled,
 .foot .seep:disabled,
-.allabout .getmyr:disabled {
+.allabout .getmyr:disabled,
+.buttonget .get:disabled {
   background-color: #fff;
   color: #5e6c84;
   animation-fill-mode: forwards;
@@ -484,6 +520,7 @@ ul {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 3.25rem;
+  margin-bottom: 1rem;
 }
 
 .contact_exp {
@@ -498,16 +535,6 @@ ul {
 .contact_exp {
   color: #fff;
   text-align: center;
-}
-
-.contactme form li input {
-  width: 95%;
-  border-radius: 8px;
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  margin: 10px 0;
-  height: 48px;
-  padding: 0;
 }
 
 .contactme form li label {
@@ -529,33 +556,14 @@ ul {
   font-weight: 400;
 }
 
-.get {
-  margin: auto;
-  height: 2.5rem;
-  padding: 0.625rem;
-  border: 1.5px solid #396df2;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  background: #fff;
-  width: 25%;
-}
-
-.contactme form li .get {
-  height: 3rem;
-  padding: 0.75rem;
-  color: #6070ff;
-  background: #fff;
-  cursor: pointer;
-  margin: 18px 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
 #survey {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+#survey-form {
+  margin-top: 2rem;
 }
 
 .ijs,
@@ -580,11 +588,48 @@ ul {
 }
 
 .touch {
-  padding-left: 40%;
+  padding-left: 43%;
   color: #396df2;
   font-size: 1.063rem;
   font-weight: 500;
   line-height: 1.5rem;
+}
+
+input::placeholder {
+  opacity: 1;
+  color: #172b4d;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.063rem;
+  line-height: 1.25rem;
+  padding: 1rem;
+}
+
+textarea::placeholder {
+  opacity: 1;
+  color: #b3bac5;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.938rem;
+  line-height: 1.5rem;
+  padding: 1rem;
+}
+
+.footer {
+  height: 1rem;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: #6070ff;
+}
+
+.footer_bar {
+  width: 8rem;
+  height: 0.3rem;
+  background: #000;
 }
 
 @media (min-width: 375px) and (max-width: 1024px) {

@@ -74,7 +74,7 @@ a {
   border-radius: 7px;
   cursor: pointer;
   background: #fff;
-  width: 30%;
+  
 }
 
 .getmyr {
@@ -306,7 +306,7 @@ ul {
 /* Second-milestone */
 
 .exp {
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
   row-gap: 5.5rem;
   justify-content: center;
   padding: 7.125rem 1.5rem;
@@ -394,7 +394,8 @@ ul {
 
 .html,
 .css,
-.js {
+.js,
+.rubi {
   padding: 0.125rem 0.625rem;
   border-radius: 0.625rem;
   color: #6070ff;
@@ -643,6 +644,79 @@ textarea::placeholder {
     height: 300px;
   }
 
+  .banner {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  .mainfo {
+    margin-left: 1.875rem;
+  }
+
+  .canopy {
+    flex: 0.35;
+  }
+
+  .fcbk {
+    flex: 0.40;
+  }
+
+  .uber {
+    flex: 0.20;
+  }
+
+
+  .bed,
+  .y2015 {
+    color: #6b7786;
+  }
+
+  .tonic {
+    margin-bottom: 0;
+  }
+
+  .grid__0 {
+    order: 0;
+  }
+
+  .grid__1 {
+    display: none;
+  }
+
+  .grid__2 {
+    display: none;
+  }
+
+  .grid__3 {
+    display: none;
+  }
+
+  .grid__4 {
+    display: none;
+  }
+
+  .grid__5 {
+    order: 1;
+  }
+
+  .grid__6 {
+    order: 2;
+  }
+
+  .grid__7 {
+    order: 3;
+  }
+
+  .flex__10 {
+    order: 1;
+  }
+
+  .flex__14 {
+    order: 1;
+  }
+
+  
+
 }
 
 
@@ -825,4 +899,11 @@ textarea::placeholder {
     height: 0.3rem;
     background: #000;
 }
+
+  .grid__0,
+  .grid__5,
+  .grid__6,
+  .grid__7 {
+    display: none;
+  }
 }

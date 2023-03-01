@@ -19,7 +19,7 @@ body {
   position: absolute;
   background-color: #fff;
   background-image: url(images/Header.svg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -47,9 +47,6 @@ body {
 a {
   color: #344563;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 0.938rem;
-  letter-spacing: 0.125rem;
   text-decoration: none;
   background: none;
   padding: 0.313rem 0.313rem;
@@ -230,6 +227,9 @@ h6 {
 
 .mhead {
   list-style-type: none;
+  font-weight: 500;
+  font-size: 0.938rem;
+  line-height: 1.25rem;
 }
 
 ul {
@@ -259,7 +259,7 @@ ul {
   height: 30px;
   align-self: flex-start;
   margin-top: 0;
-  width: 76%;
+  width: 75%;
   margin-left: 12.5%;
 }
 
@@ -273,7 +273,7 @@ ul {
   align-self: flex-start;
   margin-top: 0;
   margin-left: 12.5%;
-  width: 76%;
+  width: 75%;
 }
 
 .introduction {
@@ -616,23 +616,38 @@ textarea::placeholder {
 }
 
 .footer {
-  height: 1rem;
-  width: 100%;
-  padding-bottom: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  background: #6070ff;
+  display: none;
 }
 
-.footer_bar {
-  width: 8rem;
-  height: 0.3rem;
-  background: #000;
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding-right: 9.625rem;
+  }
+
+  .name__int {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+  }
+
+  .desc__int {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+  }
+
+  .introduction {
+    margin-left: 12.5%;
+    width: 75%;
+    height: 300px;
+  }
+
 }
 
-@media (min-width: 375px) and (max-width: 1024px) {
+
+
+@media only screen and (max-width: 768px) {
   .wrapper::before {
     background-image: url(images/header-shapes\ mobile.svg);
   }
@@ -793,4 +808,21 @@ textarea::placeholder {
   .get {
     width: 50%;
   }
+
+  .footer {
+    height: 1rem;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: #6070ff;
+  }
+  
+  .footer_bar {
+    width: 8rem;
+    height: 0.3rem;
+    background: #000;
+}
 }

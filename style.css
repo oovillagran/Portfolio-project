@@ -229,6 +229,11 @@ h6 {
   font-weight: 500;
   font-size: 0.938rem;
   line-height: 1.25rem;
+  transition: font-size 2s, color 2s, background-color 2s;
+}
+
+.mhead:hover {
+  font-size: 1.25rem;
 }
 
 ul {

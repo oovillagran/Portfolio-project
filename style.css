@@ -221,7 +221,22 @@ h6 {
   display: flex;
   margin-left: 6.25rem;
   font-weight: 800;
+  font-size: 1rem;
   color: #6070ff;
+  animation: logo 4s infinite;
+  transition: font-size 2s;
+}
+
+@keyframes logo {
+  0% {color: #091e42;}
+  25% {color: #172b4d;}
+  50% {color: #396df2;}
+  75% {color: #6070ff;}
+  100% {color: #2230d2;}
+}
+
+.name:hover {
+  font-size: 2rem;
 }
 
 .mhead {

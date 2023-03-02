@@ -131,7 +131,7 @@ a {
 .buttonget .get:hover {
   background-color: #6070ff;
   color: #fff;
-  animation-fill-mode: forwards;input
+  animation-fill-mode: forwards;
   animation-delay: 0s;
 }
 

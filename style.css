@@ -220,16 +220,16 @@ h6 {
   /* border: 1px solid orange; */
   display: flex;
   margin-left: 6.25rem;
-  font-weight: 800;
-  color: #6070ff;
+  font-weight: 790;
+  color: #6473fd;
 }
 
 .mhead {
   list-style-type: none;
-  font-weight: 500;
+  font-weight: 510;
   font-size: 0.938rem;
   line-height: 1.25rem;
-  transition: font-size 2s, color 2s, background-color 2s;
+  transition: font-size 3s, color 2s, background-color 2s;
 }
 
 .mhead:hover {
@@ -628,7 +628,7 @@ textarea::placeholder {
 
   .name__int {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 790;
     line-height: 3.75rem;
   }
 

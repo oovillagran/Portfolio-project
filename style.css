@@ -131,7 +131,7 @@ a {
 .buttonget .get:hover {
   background-color: #6070ff;
   color: #fff;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;input
   animation-delay: 0s;
 }
 
@@ -339,7 +339,7 @@ ul {
 }
 
 .profilexp {
-  padding: 1rem 0.5rem 1.5rem 0.5rem;
+  padding: 1rem 0 1.5rem 0;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   display: flex;
@@ -407,16 +407,15 @@ ul {
 
 .allaboutme {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   margin-left: 1%;
   font-size: 0.938rem;
   font-weight: 400;
   line-height: 1.5rem;
   color: #344563;
-  flex-basis: 37rem;
   background: #fff;
-  border-top-right-radius: 5rem;
+  border-top-right-radius: 7rem;
 }
 
 .tabout {
@@ -433,15 +432,15 @@ ul {
 }
 
 .allabout {
-  width: 70%;
-  flex-basis: 37rem;
+  width: 47%;
+  
 }
 
 .knowledges {
   margin: 0.375rem 0;
   padding: 1.5rem 0;
-  flex-basis: 38rem;
-  width: 70%;
+  
+  width: 35rem;
   align-items: left;
   list-style-type: none;
 }
@@ -471,7 +470,7 @@ ul {
 
 .framw,
 .skill {
-  border-bottom: 2px solid #dfe1e6;
+  border-bottom: 1.5px solid #dfe1e6;
 }
 
 .zframw,
@@ -502,7 +501,7 @@ ul {
 
 .contact {
   position: relative;
-  padding: 6.4375rem 1.5rem 1.5rem;
+  padding: 0 1.5rem 1.5rem;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -529,7 +528,7 @@ ul {
   font-weight: 400;
   line-height: 1.75rem;
   width: 60%;
-  margin: 20%;
+  margin-left: 20%;
 }
 
 .contact_ask,
@@ -651,6 +650,7 @@ textarea::placeholder {
 
   .mainfo {
     margin-left: 1.875rem;
+    width: 45%;
   }
 
   .canopy {
@@ -658,11 +658,11 @@ textarea::placeholder {
   }
 
   .fcbk {
-    flex: 0.40;
+    flex: 0.45;
   }
 
   .uber {
-    flex: 0.20;
+    flex: 0.25;
   }
 
 
@@ -715,11 +715,124 @@ textarea::placeholder {
     order: 1;
   }
 
-  
+  .knowledges {
+    margin-top: 4.5rem;
+    height: 450px;
+  }
 
+  .sleng,
+  .sframw,
+  .sskill {
+    margin-left: 1rem;
+  }
+
+  .zleng {
+    padding-bottom: 0;
+    padding-right: 2rem;
+  }
+
+  .zframw {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 2rem;
+  }
+
+  .zskill {
+    padding-bottom: 0;
+    padding-right: 2rem;
+  }
+
+  .app {
+    padding-left: 0;
+  }
+
+  .contact_exp {
+    width: 45%;
+    margin-left: 27.5%;
+  }
+
+  .contactme form li input {
+    width: 35%;
+    margin-left: 32.5%;
+    margin-top: 20px;
+    border-radius: 0;
+    height: 48px;
+    padding: 0;
+  }
+
+  .contactme form li textarea {
+    width: 35%;
+    border-radius: 0;
+    height: 170px;
+    
+  }
+
+  .textarea {
+    margin-left: 32.5%;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    background-color: #6070ff;
+    background-image: url(images/contact\ form\ background\ shapes.svg);
+    background-size: contain;
+    background-position: right;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    border-top-left-radius: 8rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .contact {
+    padding-top: 9rem;
+    height: 846px;
+  }
+
+  .contactme {
+    max-height: 846px;
+  }
+
+  .allaboutme {
+    height: 924px;
+    margin-left: 0;
+  }
+
+  .tabout {
+    margin-top: 8rem;
+    margin-left: 8rem
+  }
+
+  .letsconect {
+    height: 24px;
+    margin-bottom: 26px;
+    margin-left: 8rem
+  }
+
+  .sicons {
+    margin-bottom: 40px;
+    margin-left: 8rem
+  }
+
+  .pabout {
+    margin-left: 8rem;
+  }
+
+  .getmyr {
+    margin-left: 8rem;
+  }
+
+  .contact {
+    margin-top: -256px;
+  }
+
+  .wrapper .letsconect,
+  .wrapper .sicons {
+    margin-left: 12.5%;
+  }
 }
-
-
 
 @media only screen and (max-width: 768px) {
   .wrapper::before {

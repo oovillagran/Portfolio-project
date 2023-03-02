@@ -74,7 +74,6 @@ a {
   border-radius: 7px;
   cursor: pointer;
   background: #fff;
-  
 }
 
 .getmyr {
@@ -433,13 +432,11 @@ ul {
 
 .allabout {
   width: 47%;
-  
 }
 
 .knowledges {
   margin: 0.375rem 0;
   padding: 1.5rem 0;
-  
   width: 35rem;
   align-items: left;
   list-style-type: none;
@@ -619,7 +616,6 @@ textarea::placeholder {
   display: none;
 }
 
-
 @media only screen and (min-width: 768px) {
   .header {
     padding-right: 9.625rem;
@@ -664,7 +660,6 @@ textarea::placeholder {
   .uber {
     flex: 0.25;
   }
-
 
   .bed,
   .y2015 {
@@ -764,7 +759,6 @@ textarea::placeholder {
     width: 35%;
     border-radius: 0;
     height: 170px;
-    
   }
 
   .textarea {
@@ -793,6 +787,7 @@ textarea::placeholder {
 
   .contactme {
     max-height: 846px;
+    margin-top: -256px;
   }
 
   .allaboutme {
@@ -802,18 +797,18 @@ textarea::placeholder {
 
   .tabout {
     margin-top: 8rem;
-    margin-left: 8rem
+    margin-left: 8rem;
   }
 
   .letsconect {
     height: 24px;
     margin-bottom: 26px;
-    margin-left: 8rem
+    margin-left: 8rem;
   }
 
   .sicons {
     margin-bottom: 40px;
-    margin-left: 8rem
+    margin-left: 8rem;
   }
 
   .pabout {
@@ -822,10 +817,6 @@ textarea::placeholder {
 
   .getmyr {
     margin-left: 8rem;
-  }
-
-  .contact {
-    margin-top: -256px;
   }
 
   .wrapper .letsconect,
@@ -1006,12 +997,12 @@ textarea::placeholder {
     align-items: center;
     background: #6070ff;
   }
-  
+
   .footer_bar {
     width: 8rem;
     height: 0.3rem;
     background: #000;
-}
+  }
 
   .grid__0,
   .grid__5,

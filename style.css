@@ -220,8 +220,8 @@ h6 {
   /* border: 1px solid orange; */
   display: flex;
   margin-left: 6.25rem;
-  font-weight: 790;
-  color: #6473fd;
+  font-weight: 800;
+  color: #6070ff;
 }
 
 .mhead {
@@ -229,11 +229,12 @@ h6 {
   font-weight: 510;
   font-size: 0.938rem;
   line-height: 1.25rem;
-  transition: font-size 3s, color 2s, background-color 2s;
+  transition: font-size 2s, color 2s, background-color 2s;
 }
 
 .mhead:hover {
   font-size: 1.25rem;
+  background-color: #6070ff;
 }
 
 ul {

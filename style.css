@@ -224,10 +224,6 @@ h6 {
   line-height: 1.25rem;
 }
 
-ul {
-  /* list-style: none; */
-}
-
 .header {
   /* border: 1px solid yellow; */
   display: flex;
@@ -331,9 +327,8 @@ ul {
 }
 
 .profilexp {
+  /* margin-left: 1.5rem; */
   padding: 1rem 0 1.5rem 0;
-  /* margin-left: 1.5rem;*/
-  /* margin-right: 1.5rem; */
   display: flex;
   align-items: flex-start;
   border-radius: 1rem;
@@ -398,10 +393,10 @@ ul {
 }
 
 .allaboutme {
+  /* margin-left: 1%; */
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  /* margin-left: 1%; */
   font-size: 0.938rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -411,20 +406,16 @@ ul {
 }
 
 .tabout {
-  margin-left: 12.5%;
   /* width: 76%; */
+  margin-left: 12.5%;
 }
 
 .pabout {
-  margin-left: 12.5%;
   /* width: 76%; */
+  margin-left: 12.5%;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-}
-
-.allabout {
-  /* width: 76%; */
 }
 
 .knowledges {
@@ -571,10 +562,10 @@ ul {
 }
 
 .appt {
+  /* text-align: left; */
   font-size: 0.938rem;
   font-weight: 500;
   line-height: 1.25rem;
-  /* text-align: left; */
 }
 
 .touch {
@@ -643,24 +634,8 @@ textarea::placeholder {
     width: 45%;
   }
 
-  .fcbk {
-    ;
-  }
-
-  .full__fcbk {
-    ;
-  }
-
-  .year__fcbk {
-    ;
-  }
-
   .sub {
     gap: 1.5rem;
-  }
-
-  .uber {
-    flex: ;
   }
 
   .bed,
@@ -715,6 +690,8 @@ textarea::placeholder {
   .knowledges {
     margin-top: 4.5rem;
     height: 28.125rem;
+    flex: 2;
+    padding-right: 3rem;
   }
 
   .sleng,
@@ -787,10 +764,6 @@ textarea::placeholder {
     height: 52.875rem;
   }
 
-  .contactme {
-    /* max-height: 52.875rem; */
-  }
-
   .allaboutme {
     max-height: 57.75rem;
     margin-left: 0;
@@ -802,19 +775,14 @@ textarea::placeholder {
     flex: 2;
   }
 
-  .knowledges {
-    flex: 2;
-    padding-right: 3rem;
-  }
   .tabout {
     margin-top: 8rem;
     margin-left: 8rem;
   }
 
   .pabout {
-    margin-left: 8rem;
-    padding-right: ;
     /* width: 77%; */
+    margin-left: 8rem;
   }
 
   .letsconect {
@@ -829,8 +797,6 @@ textarea::placeholder {
     margin-left: 8rem;
   }
 
- 
-
   .getmyr {
     margin-left: 8rem;
   }
@@ -840,18 +806,16 @@ textarea::placeholder {
     margin-left: 12.5%;
   }
 
-  .get  {
+  .get {
     width: 10rem;
-    ;
   }
 
   .buttonget {
     text-align: center;
   }
-
 }
 
-@media only screen and (max-width: 768px)  and (orientation:landscape) {
+@media only screen and (max-width: 768px)  and (orientation: landscape) {
   .profilexp {
     display: flex;
     flex-direction: column;
@@ -868,7 +832,7 @@ textarea::placeholder {
   }
 }
 
-@media only screen and (max-width: 768px)  and (orientation:portrait) {
+@media only screen and (max-width: 768px)  and (orientation: portrait) {
   .wrapper::before {
     background-image: url(images/header-shapes\ mobile.svg);
   }
@@ -909,9 +873,9 @@ textarea::placeholder {
   }
 
   .profilexp {
+    /* max-height: 100vh; */
     display: flex;
     flex-direction: column;
-    /* max-height: 100vh; */
   }
 
   .banner {
@@ -959,9 +923,9 @@ textarea::placeholder {
   }
 
   .allaboutme {
+    /* position: relative; */
     display: flex;
     flex-direction: column;
-    /* position: relative; */
   }
 
   .allabout {
@@ -1062,7 +1026,7 @@ textarea::placeholder {
     line-height: 1rem;
     font-size: 0.9rem;
   }
-  
+
   .sub {
     flex-wrap: nowrap;
   }

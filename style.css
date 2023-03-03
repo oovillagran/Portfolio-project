@@ -136,7 +136,7 @@ a {
   color: #fff;
 }
 
-a:focus,
+.port:focus,
 .foot .seep:focus,
 .allabout .getmyr:focus,
 .buttonget .get:focus {

@@ -28,7 +28,7 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
+- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -72,9 +72,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-
-
-- N/A
+- Not yet implemented.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -191,9 +189,7 @@ I would like to thank Microverse comunity, especially reviewers guys, they do an
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository) licensed.
-
-_NOTE: we recommend using the [MIT license]<a href="LICENSE.md">
+This project is [MIT](LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

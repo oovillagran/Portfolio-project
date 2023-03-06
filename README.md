@@ -4,7 +4,7 @@
 <div align="center">
 
   <h3><b>Portfolio Project</b></h3>
-
+  <img src="images/readme.png" alt="Readme Image">
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -72,7 +72,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Not yet implemented.
+- Here you can see a [Live Demo](https://oovillagran.github.io/Portfolio-project/) of my project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,7 +124,7 @@ To run tests, execute the following command:
 
 ### Deployment
 
-- N/A
+- You can deploy this project using GitHub pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

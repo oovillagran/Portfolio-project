@@ -240,7 +240,7 @@ h6 {
 
 .letsconect {
   /* border: 1px solid red; */
-  display: flex;
+  /* display: flex;
   background-image: url(./images/Social\ Media.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -248,7 +248,13 @@ h6 {
   align-self: flex-start;
   margin-top: 0;
   width: 75%;
-  margin-left: 12.5%;
+  margin-left: 12.5%; */
+}
+
+.letsconect h3 {
+  color: #6070ff;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .sicons {
@@ -260,7 +266,7 @@ h6 {
   height: 20px;
   align-self: flex-start;
   margin-top: 0;
-  margin-left: 12.5%;
+  margin-left: 14%;
   width: 75%;
 }
 
@@ -268,6 +274,7 @@ h6 {
   /* border: 1px solid red; */
   margin-left: 14%;
   width: 72%;
+  margin-bottom: 20rem;
 }
 
 .info ul {
@@ -416,6 +423,10 @@ h6 {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
+}
+
+.letsconnet__all {
+  margin-left: 12.5%;
 }
 
 .knowledges {
@@ -785,7 +796,7 @@ textarea::placeholder {
     margin-left: 8rem;
   }
 
-  .letsconect {
+  .letsconnet__all {
     height: 1.5rem;
     margin-bottom: 1.625rem;
     margin-left: 8rem;
@@ -799,11 +810,6 @@ textarea::placeholder {
 
   .getmyr {
     margin-left: 8rem;
-  }
-
-  .wrapper .letsconect,
-  .wrapper .sicons {
-    margin-left: 12.5%;
   }
 
   .get {
@@ -937,7 +943,7 @@ textarea::placeholder {
     margin-left: 6%;
   }
 
-  .letsconect {
+  .letsconnet__all {
     margin-left: 6%;
   }
 

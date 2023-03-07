@@ -18,7 +18,7 @@ body {
   position: relative;
 }
 
-.wrapper::before {
+.main::before {
   content: "";
   position: absolute;
   background-color: #fff;
@@ -39,7 +39,7 @@ body {
   background: #fff;
 }
 
-.wrapper {
+.main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -238,36 +238,18 @@ h6 {
   padding: 0;
 }
 
-.letsconect {
-  /* border: 1px solid red; */
-  /* display: flex;
-  background-image: url(./images/Social\ Media.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 30px;
-  align-self: flex-start;
-  margin-top: 0;
-  width: 75%;
-  margin-left: 12.5%; */
-}
-
 .letsconect h3 {
   color: #6070ff;
   font-size: 1rem;
   font-weight: 500;
 }
 
-.sicons {
-  /* border: 1px solid black; */
+.social_icons {
+  list-style: none;
   display: flex;
-  background-image: url(./images/social\ media\ icons.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 20px;
-  align-self: flex-start;
-  margin-top: 0;
-  margin-left: 14%;
-  width: 75%;
+  align-items: left;
+  gap: 0.75rem;
+  padding: 0;
 }
 
 .introduction {
@@ -425,8 +407,23 @@ h6 {
   line-height: 1.5rem;
 }
 
+.social_icons_all {
+  width: 100%;
+  margin-left: 12.5%;
+}
+
 .letsconnet__all {
   margin-left: 12.5%;
+}
+
+.social_icons__about {
+  list-style: none;
+  display: flex;
+  align-items: left;
+  gap: 0.75rem;
+  padding: 0;
+  margin-left: 0;
+  width: 100%;
 }
 
 .knowledges {
@@ -776,14 +773,15 @@ textarea::placeholder {
   }
 
   .allaboutme {
-    max-height: 57.75rem;
+    /* max-height: 57.75rem; */
     margin-left: 0;
-    padding-bottom: 9rem;
+    padding-bottom: 0rem;
     gap: 20px;
   }
 
   .allabout {
     flex: 2;
+    min-height: 50rem;
   }
 
   .tabout {
@@ -803,7 +801,7 @@ textarea::placeholder {
     margin-top: 2.5rem;
   }
 
-  .sicons {
+  .social_icons_all {
     margin-bottom: 2.5rem;
     margin-left: 8rem;
   }
@@ -839,7 +837,7 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 768px)  and (orientation: portrait) {
-  .wrapper::before {
+  .main::before {
     background-image: url(images/header-shapes\ mobile.svg);
   }
 
@@ -852,7 +850,7 @@ textarea::placeholder {
     flex-basis: 100%;
   }
 
-  .wrapper {
+  .main {
     display: block;
   }
 
@@ -932,11 +930,13 @@ textarea::placeholder {
     /* position: relative; */
     display: flex;
     flex-direction: column;
+    padding-bottom: 0rem;
+    gap: 20px;
   }
 
   .allabout {
     width: 100%;
-    max-height: 400px;
+    min-height: 400px;
   }
 
   .tabout {
@@ -949,9 +949,10 @@ textarea::placeholder {
 
   .getmyr {
     margin-left: 6%;
+    margin-bottom: 10rem;
   }
 
-  .sicons {
+  .social_icons_all {
     margin-left: 6%;
   }
 

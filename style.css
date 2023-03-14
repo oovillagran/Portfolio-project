@@ -16,11 +16,6 @@
   cursor: pointer;
 }
 
-.noScroll {
-  overflow: hidden;
-}
-
-
 html {
   font-size: 16px;
 }
@@ -34,7 +29,7 @@ body {
   position: relative;
 }
 
-.main {
+.main::before {
   content: "";
   position: absolute;
   background-color: #fff;
@@ -145,7 +140,7 @@ a {
 }
 
 .nav-link {
-  transition: 0.7 ease;
+  transition: 0.7s ease;
 }
 
 .port:hover,
@@ -864,19 +859,15 @@ textarea::placeholder {
 @media only screen and (max-width: 768px)  and (orientation: portrait) {
   .main {
     background-image: url(images/header-shapes\ mobile.svg);
+    display: block;
   }
 
   .flex-nav ul {
     flex-wrap: wrap;
-    /* display: none; */
   }
 
   .flex-nav li {
     flex-basis: 100%;
-  }
-
-  .main {
-    display: block;
   }
 
   .name {
@@ -896,18 +887,6 @@ textarea::placeholder {
     width: 75px;
     cursor: pointer;
   }
-
-  /* .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  } */
 
   .nav-menu {
     position: fixed;
@@ -932,24 +911,13 @@ textarea::placeholder {
     line-height: 2.75rem;
     text-align: left;
     margin-left: 1.75rem;
-
   }
-
-  /* .nav-menu.active {
-    left: 0;
-    background-color: #6070ff;
-    position: absolute;
-    top: 1;
-    opacity: 0.9;
-
-  } */
 
   .mainfo {
     padding: 0;
   }
 
   .profilexp {
-    /* max-height: 100vh; */
     display: flex;
     flex-direction: column;
   }

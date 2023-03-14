@@ -5,6 +5,18 @@
   font-family: "Poppins", sans-serif;
 }
 
+.xOption {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: absolute;
+  top: 1rem;
+  right: -12rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+
 html {
   font-size: 16px;
 }
@@ -18,7 +30,7 @@ body {
   position: relative;
 }
 
-.main::before {
+.main {
   content: "";
   position: absolute;
   background-color: #fff;
@@ -846,7 +858,7 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 768px)  and (orientation: portrait) {
-  .main::before {
+  .main {
     background-image: url(images/header-shapes\ mobile.svg);
   }
 
@@ -881,7 +893,7 @@ textarea::placeholder {
     cursor: pointer;
   }
 
-  .hamburger.active .bar:nth-child(2) {
+  /* .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
 
@@ -891,7 +903,7 @@ textarea::placeholder {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  }
+  } */
 
   .nav-menu {
     position: fixed;
@@ -902,7 +914,7 @@ textarea::placeholder {
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    z-index: 100;
+    z-index: 0;
     min-height: 100vh;
   }
 
@@ -919,14 +931,14 @@ textarea::placeholder {
 
   }
 
-  .nav-menu.active {
+  /* .nav-menu.active {
     left: 0;
     background-color: #6070ff;
     position: absolute;
     top: 1;
     opacity: 0.9;
 
-  }
+  } */
 
   .mainfo {
     padding: 0;

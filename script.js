@@ -1,35 +1,3 @@
-// const hamburguerMenuIcon = document.querySelector('.three-bar-menu');
-// const header = document.querySelector('header');
-// const backing = document.querySelector('.backing')
-// const body = document.querySelector('body');
-// const popUpMenuDiv = document.createElement('div');
-// const unorderedList = document.createElement('ul');
-// const headerBar = document.querySelector('.header-bar');
-// const mainSection = document.querySelector('.main-section');
-// const crossIcon = document.createElement('a');
-// const titlesOfMenu = ['Portfolio', 'About', 'Contact'];
-// const anchorIds = ['#main-img', '#about-section-1', '#form-footer'];
-
-// hamburguerMenuIcon.addEventListener('click', () => {
-//   crossIcon.innerText = 'X';
-//   crossIcon.classList.add('crossIcon');
-//   popUpMenuDiv.appendChild(crossIcon);
-
-//   popUpMenuDiv.style.fontWeight = '600';
-//   popUpMenuDiv.style.fontSize = '32px';
-//   popUpMenuDiv.style.display = 'flex';
-//   popUpMenuDiv.style.padding = '1rem -10rem';
-//   popUpMenuDiv.style.zIndex = '100';
-//   popUpMenuDiv.style.position = 'absolute';
-//   popUpMenuDiv.style.width = '100%';
-//   popUpMenuDiv.style.height = '100vh';
-//   popUpMenuDiv.style.backgroundColor = '#6070ff';
-//   popUpMenuDiv.style.mixBlendMode = 'multiply';
-//   headerBar.style.filter = 'blur(6px)';
-//   mainSection.style.filter = 'blur(6px)';
-
-//   body.insertBefore(popUpMenuDiv, backing);
-
 const hamburger = document.querySelector('.hamburger');
 const header = document.querySelector('header');
 const backing = document.querySelector('.backing')
@@ -51,18 +19,19 @@ hamburger.addEventListener('click', () => {
   popDiv.style.position = 'absolute';
   popDiv.style.fontSize = '2rem';
   popDiv.style.fontWeight = '600';
-  popDiv.style.lineHeight = '2.75rem';
-  popDiv.style.padding = '5rem 2rem';
-  popDiv.style.zIndex = '1000';
+  popDiv.style.lineHeight = '4rem';
+  popDiv.style.padding = '5rem 0rem';
+  popDiv.style.zIndex = '100';
   popDiv.style.width = '100%';
   popDiv.style.minHeight = '100vh';
   popDiv.style.mixBlendMode = 'multiply';
   popDiv.style.backgroundColor = '#6070FF';
-  popDiv.style.position = "absolute";
   uList.style.listStyleType = "none";
   headerMenu.style.filter = 'blur(6px)';
   mSection.style.filter = 'blur(6px)';
+  body.style.overflow = 'hidden';
     
+  
   body.insertBefore(popDiv, backing);
   popDiv.appendChild(uList);
 
@@ -82,24 +51,23 @@ hamburger.addEventListener('click', () => {
     window.location.reload();
   })
 
-  const refTags = document.querySelectorAll ('body header div ul li a');
-  for ( let i = 0; i < refTags.length; i++){
+  const refTags = document.querySelectorAll ('body div ul li a');
+  for ( let i = 0; i < refTags.length; i++) {
     refTags[i].classList.add(`refTags${i}`);
   }
 
-  const refTags0 = document.querySelector ('refTags0');
+  const refTags0 = document.querySelector ('.refTags0');
   refTags0.addEventListener('click', () => {
     window.location.reload();
   });
 
-  const refTags1 = document.querySelector ('refTags1');
+  const refTags1 = document.querySelector ('.refTags1');
   refTags1.addEventListener('click', () => {
     window.location.reload();
   });
 
-  const refTags2 = document.querySelector ('refTags2');
+  const refTags2 = document.querySelector ('.refTags2');
   refTags2.addEventListener('click', () => {
     window.location.reload();
   });
-
 });

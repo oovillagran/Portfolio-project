@@ -10,10 +10,14 @@
   font-size: 1.5rem;
   font-weight: 400;
   position: absolute;
-  top: 1rem;
-  right: -12rem;
-  padding: 1rem;
+  text-align: right;
+  padding-right: 4rem;
+  top: 3rem;
   cursor: pointer;
+}
+
+.noScroll {
+  overflow: hidden;
 }
 
 

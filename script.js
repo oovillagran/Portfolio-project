@@ -9,9 +9,10 @@ const mSection = document.querySelector('.main');
 const xOption = document.createElement('a');
 const menuOption = ['Portfolio', 'About', 'Contact'];
 const refElements = ['#portfolio', '#aboutme', '#contact'];
+const barDiv = document.createElement('div');
 
 hamburger.addEventListener('click', () => {
-  xOption.innerText = 'X';
+  xOption.innerText = 'x';
   xOption.classList.add('xOption');
   popDiv.appendChild(xOption);
 
@@ -69,4 +70,14 @@ hamburger.addEventListener('click', () => {
   refTags2.addEventListener('click', () => {
     window.location.reload();
   });
+
+  popDiv.appendChild(barDiv);
+
+  barDiv.style.width = '30%';
+  barDiv.style.height = '0.5rem';
+  barDiv.style.background = '#000';
+  barDiv.style.marginLeft = '35%';
+  barDiv.style.marginTop = '46rem'
+  // barDiv.style.padding = '50%';
+  barDiv.style.position = 'absolute';
 });

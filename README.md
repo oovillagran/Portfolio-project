@@ -16,6 +16,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🏎️ Loom Walktrough](#walktrough)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -73,6 +74,14 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - Here you can see a [Live Demo](https://oovillagran.github.io/Portfolio-project/) of my project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Walktrough-->
+
+## 🏎️ Loom Walktrough <a name="walktrough"></a>
+
+- This is the [Loom Walktrough](https://www.loom.com/share/dc581ee556564b79980452c969e5d524) of my project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

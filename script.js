@@ -136,7 +136,7 @@ hamburger.addEventListener('click', () => {
   barDiv.style.position = 'absolute';
 });
 
-// Dinamic grid
+// Dinamic cards
 
 // Pop Up Windows
 const popContainer = document.querySelector('.gridPop');
@@ -161,7 +161,7 @@ popObjects.forEach((postData) => {
         </ul>
       
         <p class="popDescription">${postData.description1}</p>
-        <ul class="popUl_card">
+        <ul class="popUl_card popUlCards">
           <li class="popLi popscreen">${postData.tech[0]}</li>
           <li class="popLi popscreen">${postData.tech[1]}</li>
           <li class="popLi popscreen">${postData.tech[2]}</li>
@@ -188,10 +188,10 @@ popObjects.map((postData, index) => {
         <h2 class="pop-title">${postData.title}</h2>
         <button type="button" class="xButton"></button>
       </div>
-      <ul class="ul-popscreen">
+      <ul class="ul-popscreen ulpopscreen">
         <li class="li-popscreen subtitle">${postData.subtitle}</li>
         <li class="li-popscreen sub_exp">${postData.experience[0]}</li>
-        <li class="li-popscreen sub_exp">${postData.experience[1]}</li>
+        <li class="li-popscreen sub_exp subyear">${postData.experience[1]}</li>
       </ul>
       <div class="pop_mainView">
         <div class="pImage">
@@ -204,7 +204,7 @@ popObjects.map((postData, index) => {
         </div>
         <div class="popFooterFlex">
           <div class="popTechs">
-            <ul class="ul-popscreen">
+            <ul class="ul-popscreen ulpopscreen">
               <li class="li-popscreen popscreen">${postData.tech[0]}</li>
               <li class="li-popscreen popscreen">${postData.tech[1]}</li>
               <li class="li-popscreen popscreen">${postData.tech[2]}</li>
@@ -214,7 +214,7 @@ popObjects.map((postData, index) => {
           </div>
           <div class="pop_buttons_see">
             <a href="${postData.seeLive}" target="_blank" rel="noopener noreferrer" class="popSee">See live <img src="images/pop/See3.png" alt="Elipse Icon" id="popSee"></a>
-            <a href="${postData.seeSource}" target="_blank" rel="noopener noreferrer" class="popSource">See source <img src="images/pop/Source.svg" alt="gitHub Icon"></a>
+            <a href="${postData.seeSource}" target="_blank" rel="noopener noreferrer" class="popSource">See source <img src="images/pop/Source.svg" alt="gitHub Icon" id="popSource"></a>
           </div>
         </div>
       </div>

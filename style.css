@@ -1056,6 +1056,99 @@ textarea::placeholder {
   .grid__7 {
     display: none;
   }
+
+  /* popUp Windows */
+
+  .background_card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 100% !important;
+  }
+
+  .modal-card__img{
+    width: 100%;
+    height: auto;
+  }
+
+  .gridPop {
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .card {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .title_card {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .card_experience,
+  .sub_exp {
+    font-size: 0.8rem !important;
+  }
+
+  .subtitle_card {
+    width: 25% !important;
+  }
+
+  .sub_exp {
+    width: 35% !important;
+  }
+
+  .popDescription {
+    font-size: 0.938rem;
+  }
+  
+  .popUl_card {
+    padding: 0 !important;
+  }
+
+  .popButton {
+    margin: 0 0 2rem;
+  }
+
+  .pop-title {
+    font-size: 2rem;
+  }
+
+  .ulpopscreen {
+    padding-left: 1.25rem;
+    flex-wrap: nowrap;
+  }
+
+  .subyear {
+    width: 20% !important;
+  }
+
+  .pImage {
+    background-repeat: no-repeat;
+    max-height: 14rem;
+  }
+
+  .popupconteiner {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .popDetail {
+    height: 100vh !important;
+  }
+
+  .popSee,
+  .popSource {
+    height: 3rem !important;
+    margin-bottom: 1rem;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 960px) {
@@ -1106,7 +1199,6 @@ textarea::placeholder {
   left: 0;
   z-index: 3;
   justify-content: center;
-  /* align-items: center; */
   background-color: rgba(0, 0, 0, 0.212);;
   backdrop-filter: blur(7px);
   transform-origin: top;
@@ -1117,14 +1209,11 @@ textarea::placeholder {
   display: flex;
   width: 80%;
   overflow-x: hidden;
-  /* align-items: center; */
-  
 }
 
 .popUp {
  display: flex;
  transform: scale(1);
- /* align-items: center; */
  opacity: 1;
  gap: 4rem;
  
@@ -1152,13 +1241,11 @@ textarea::placeholder {
 }
 
 .pop_mainView_card {
-  border: black solid 1px;
   margin: 0 1.5rem;
   flex: 0.5;
 }
 
 .text_desc_card {
-  border: red 1px solid;
   margin: 0 2rem 0 1rem;
   flex: 1;
 }
@@ -1210,6 +1297,7 @@ textarea::placeholder {
   height: 36.625rem;
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .pmain {
@@ -1219,7 +1307,6 @@ textarea::placeholder {
   padding: 0rem 1rem 1rem 0;
   margin: 0;
   width: 100%;
-  /* max-height: 0; */
 }
 
 .pop-title {
@@ -1306,6 +1393,10 @@ textarea::placeholder {
   margin-top: 0;
 }
 
+.popUlCards {
+  padding: 0;
+}
+
 .popscreen {
   padding: 0.125rem 0.625rem;
   border-radius: 0.625rem;
@@ -1321,11 +1412,15 @@ textarea::placeholder {
   border: 1px #396df2 solid;
   border-radius: 0.5rem;
   color: #396df2;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   width: 70%;
 }
 
 #popSee {
+  width: 15%;
+}
+
+#popSource {
   width: 15%;
 }
 
@@ -1337,14 +1432,17 @@ textarea::placeholder {
   justify-content: space-around;
   align-items: center;
   column-gap: 0.25rem;
+  flex-wrap: wrap;
+  row-gap: 1rem;
 }
 
-.popsee {
+.popSee,
+.popSource {
   display: flex;
   justify-content: center;
   column-gap: 10px;
   align-items: center;
-  width: 100%;
+  width: 45%;
   height: 80%;
   text-align: center;
   font-size: 0.8rem;
@@ -1378,7 +1476,6 @@ textarea::placeholder {
 }
 
 .card {
-  border: red solid 1px;
   display: flex;
 }
 

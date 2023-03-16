@@ -5,17 +5,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.xOption {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 400;
-  position: absolute;
-  text-align: right;
-  padding-right: 4rem;
-  top: 3rem;
-  cursor: pointer;
-}
-
 html {
   font-size: 16px;
 }
@@ -32,7 +21,7 @@ body {
 .main::before {
   content: "";
   position: absolute;
-  background-color: #fff;
+  background: #fff;
   background-image: url(images/Header.svg);
   background-size: contain;
   background-position: center;
@@ -46,9 +35,9 @@ body {
   z-index: -1;
 }
 
-.modal {
+/* .modal {
   background: #fff;
-}
+} */
 
 .main {
   display: flex;
@@ -56,7 +45,7 @@ body {
   align-items: flex-start;
   position: relative;
   padding: 6rem 1.5rem;
-  z-index: 10;
+  z-index: 1;
 }
 
 a {
@@ -510,7 +499,7 @@ h6 {
 .contact {
   position: relative;
   padding: 0 1.5rem 1.5rem;
-  z-index: 10;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1090,3 +1079,289 @@ textarea::placeholder {
     gap: 2rem;
   }
 }
+
+/* JavaScript */
+
+.xOption {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: absolute;
+  text-align: right;
+  padding-right: 4rem;
+  top: 3rem;
+  cursor: pointer;
+}
+
+.pop_section {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: rgba(0, 0, 0, 0.212);;
+  backdrop-filter: blur(7px);
+  transform-origin: top;
+  
+}
+
+.pop_div {
+  display: flex;
+  width: 80%;
+  overflow-x: hidden;
+  /* align-items: center; */
+  
+}
+
+.popUp {
+ display: flex;
+ transform: scale(1);
+ /* align-items: center; */
+ opacity: 1;
+ gap: 4rem;
+ 
+}
+
+.gridPop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.background_card {
+  padding: 1.5rem 0 0 0;
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  transform: translateY(1px);
+  transition: all 200 ms;
+}
+
+/* .title {
+  padding: 0 1rem 0 1rem;
+  margin: 0;
+  font-size: 2rem;
+  color: red;
+} */
+
+.popDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  height: 73rem;
+  width: 80vw;
+  border-radius: 10px;
+  top: 2rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  opacity: 1 !important;
+  padding: 0 1rem;
+  
+}
+
+#popInfo {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  /* flex-direction: column; */
+  /* padding: 0 1rem; */
+}
+
+.scroll {
+  scroll-snap-align: center !important;
+}
+
+/* .no-scroll{
+  overflow: hidden !important;
+} */
+
+.pImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36.625rem;
+  background-size: 100%;
+  background-position: center;
+}
+
+.pmain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem 1rem 0;
+  margin: 0;
+  width: 100%;
+  /* max-height: 0; */
+}
+
+.pop-title {
+  margin: 0;
+  padding: 1rem 0 0 0;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 0.938rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  width: 6rem;
+}
+
+.sub_exp {
+  list-style-type: disc;
+  font-size: 0.938rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #7a869a;
+  width: 8rem;
+
+}
+
+.xButton {
+  width: 1rem;
+  height: 1rem;
+  border: none;
+  background-image: url("images/pop/hamburguerX.svg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.ul-popscreen {
+  display: flex;
+  list-style: none;
+  gap: 0.3rem;
+  position: relative;
+  left: -1rem;
+  margin-top: 0.2rem;
+  flex-wrap: wrap;
+}
+
+.pop_mainview {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 36.625rem;
+  padding: 1rem 1rem;
+}
+
+/* .p-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  background-color: rgba(0, 0, 0, 0.315);
+  height: 4rem;
+} */
+
+.p-toggle-btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: blue;
+}
+
+.popupconteiner {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 20rem;
+  margin-top: 2rem;
+}
+
+.pop_paragraph {
+  margin-top: 0;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  color: #344563;
+}
+
+.popTechs{
+  margin-top: 0;
+}
+
+.popscreen {
+  padding: 0.125rem 0.625rem;
+  border-radius: 0.625rem;
+  color: #6070ff;
+  background: #ebebff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+
+.popSee,
+.popSource {
+  border: 1px #396df2 solid;
+  border-radius: 0.5rem;
+  color: #396df2;
+  font-size: 0.9rem;
+  width: 70%;
+}
+
+#popSee {
+  width: 15%;
+}
+
+.pop_buttons_see {
+  height: 4rem;
+  padding: 0.5rem 0;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.popsee {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.popsee:active,
+.popsee:visited,
+.popsee:link {
+  color: #6070ff;
+  text-decoration: none;
+}
+
+
+.pop_X {
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.pop_active {
+  display: flex !important;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+  
+}
+
+
+
+
+

@@ -78,6 +78,5 @@ hamburger.addEventListener('click', () => {
   barDiv.style.background = '#000';
   barDiv.style.marginLeft = '35%';
   barDiv.style.marginTop = '46rem'
-  // barDiv.style.padding = '50%';
   barDiv.style.position = 'absolute';
 });

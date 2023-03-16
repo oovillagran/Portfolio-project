@@ -11,6 +11,8 @@ html {
 
 body {
   overflow-x: hidden;
+  top: 0;
+  margin: 0;
 }
 
 .backing {
@@ -135,7 +137,8 @@ a {
 .port:hover,
 .foot .seep:hover,
 .allabout .getmyr:hover,
-.buttonget .get:hover {
+.buttonget .get:hover,
+.popButton:hover {
   background-color: #6070ff;
   color: #fff;
 }
@@ -143,7 +146,8 @@ a {
 .port:focus,
 .foot .seep:focus,
 .allabout .getmyr:focus,
-.buttonget .get:focus {
+.buttonget .get:focus,
+.popButton:focus  {
   background-color: #2230d2;
   color: #fff;
 }
@@ -1136,21 +1140,45 @@ textarea::placeholder {
 
 .background_card {
   padding: 1.5rem 0 0 0;
-  height: 24rem;
+  height: 31rem;
   display: flex;
-  flex-direction: column;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  border: 0.05rem solid #dfe1e6;
   align-items: flex-start;
   justify-content: flex-end;
   transform: translateY(1px);
   transition: all 200 ms;
 }
 
-/* .title {
-  padding: 0 1rem 0 1rem;
-  margin: 0;
-  font-size: 2rem;
-  color: red;
-} */
+.pop_mainView_card {
+  border: black solid 1px;
+  margin: 0 1.5rem;
+  flex: 0.5;
+}
+
+.text_desc_card {
+  border: red 1px solid;
+  margin: 0 2rem 0 1rem;
+  flex: 1;
+}
+
+.card_experience {
+  padding-left: 1rem;
+}
+
+.subtitle_card {
+  font-weight: 600;
+  color: #344563;
+  width: 7rem;
+}
+
+.popUl_card {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  padding: 2rem 0;
+}
 
 .popDetail {
   display: flex;
@@ -1165,14 +1193,6 @@ textarea::placeholder {
   opacity: 1 !important;
   padding: 0 1rem;
   
-}
-
-#popInfo {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: flex-start; */
-  /* flex-direction: column; */
-  /* padding: 0 1rem; */
 }
 
 .scroll {
@@ -1213,6 +1233,7 @@ textarea::placeholder {
   font-weight: 500;
   line-height: 1.25rem;
   width: 6rem;
+  list-style: none;
 }
 
 .sub_exp {
@@ -1255,16 +1276,6 @@ textarea::placeholder {
   height: 36.625rem;
   padding: 1rem 1rem;
 }
-
-/* .p-toggle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  top: 45%;
-  background-color: rgba(0, 0, 0, 0.315);
-  height: 4rem;
-} */
 
 .p-toggle-btn {
   height: 2rem;
@@ -1358,10 +1369,26 @@ textarea::placeholder {
   display: flex !important;
   opacity: 1;
   transition: all 200ms ease-in-out;
-  
 }
 
+.gridPop {
+  grid-template-columns: repeat(4,1fr);
+  row-gap: 9rem;
+  margin: 9rem 2rem;
+}
 
+.card {
+  border: red solid 1px;
+  display: flex;
+}
 
-
-
+.popButton {
+  background: #fff;
+  height: 40px;
+  padding: 10px;
+  border: 1.5px solid #396df2;
+  border-radius: 7px;
+  cursor: pointer;
+  background: #fff;
+  color: #396df2;
+}

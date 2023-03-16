@@ -5,23 +5,49 @@ const popObjects = [
     title: 'Tonic',
     subtitle: 'CANOPY',
     experience: ['Back End Dev', '2015'],
-    image: 'images/pop/Portfolio5.svg',
+    image: './images/pop/Portfolio5.svg',
+    description1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
     tech: ['html', 'css', 'javaScript', 'Ruby', 'Bootstrap'],
     seeLive: 'https://oovillagran.github.io/Portfolio-project/',
     seeSource: 'https://github.com/oovillagran',
-    class: 'popDetail1',
+    class: 'popCard1',
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'FACEBOOK',
     experience: ['Full Stack Dev', '2015'],
-    image: 'images/pop/Portfolio2.svg',
+    image: './images/pop/Portfolio4.svg',
+    description1: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
     tech: ['html', 'Ruby on rails', 'css', 'javaScript'],
     seeLive: 'https://oovillagran.github.io/Portfolio-project/',
     seeSource: 'https://github.com/oovillagran',
-    class: 'popDetail2',
+    class: 'popCard2',
+  },
+  {
+    title: 'Facebook 360',
+    subtitle: 'FACEBOOK',
+    experience: ['Full Stack Dev', '2015'],
+    image: './images/pop/Portfolio1.svg',
+    description1: 'Exploring the future of media in Facebook\'\s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    tech: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    seeLive: 'https://oovillagran.github.io/Portfolio-project/',
+    seeSource: 'https://github.com/oovillagran',
+    class: 'popCard3',
+  },
+  {
+    title: 'Uber Navigation',
+    subtitle: 'Uber',
+    experience: ['Lead Developer', '2018'],
+    image: './images/pop/Portfolio2.png',
+    description1: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    tech: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    seeLive: 'https://oovillagran.github.io/Portfolio-project/',
+    seeSource: 'https://github.com/oovillagran',
+    class: 'popCard4',
   }
 ];
 
@@ -110,31 +136,42 @@ hamburger.addEventListener('click', () => {
   barDiv.style.position = 'absolute';
 });
 
-
-
-
+// Dinamic grid
 
 // Pop Up Windows
-// const popContainer = document.querySelector('.gridPop');
+const popContainer = document.querySelector('.gridPop');
 
-// popObjects.forEach((postData) => {
-//   const card = document.createElement('div');
-//   card.classList.add('card', postData.class);
-//   card.style.backgroundImage = `url(${postData.image})`;
-//   card.innerHTML = `
-//     <div class="background_card">
-//     <h2 class="title">${postData.title}</h2>
-//     <p class="popDescription">${postData.description}</p>
-//     <ul class="popUl">
-//     <li class="popLi">${postData.tech[0]}</li>
-//     <li class="popLi">${postData.tech[1]}</li>
-//     <li class="popLi">${postData.tech[2]}</li>
-//     </ul>
-//     <button class="popButton">see project</button>
-//     </div>
-//   `;
-//   popContainer.appendChild(card);
-// });
+popObjects.forEach((postData) => {
+  const card = document.createElement('div');
+  card.classList.add('card', postData.class);
+  
+  card.innerHTML = `
+    <div class="background_card">
+        
+      <div class="pop_mainView_card">
+      <img class="modal-card__img" src="${postData.image}" alt="" />
+      </div>
+      
+      <div class="text_desc_card">
+        <h2 class="title_card">${postData.title}</h2>
+        <ul class="ul-popscreen card_experience">
+          <li class="li-popscreen subtitle_card">${postData.subtitle}</li>
+          <li class="li-popscreen sub_exp">${postData.experience[0]}</li>
+          <li class="li-popscreen sub_exp">${postData.experience[1]}</li>
+        </ul>
+      
+        <p class="popDescription">${postData.description1}</p>
+        <ul class="popUl_card">
+          <li class="popLi popscreen">${postData.tech[0]}</li>
+          <li class="popLi popscreen">${postData.tech[1]}</li>
+          <li class="popLi popscreen">${postData.tech[2]}</li>
+        </ul>
+        <button class="popButton">See Project</button>
+      </div>
+    </div>
+  `;
+  popContainer.appendChild(card);
+});
 
 // pop Up Window
 
@@ -190,8 +227,9 @@ popObjects.map((postData, index) => {
 // buttons
 
 const popSection = document.querySelector('.pop_section');
-const seeButton = document.querySelector('.seeButton');
-// const seeButton = document.querySelectorAll('.seeButton');
+// const seeButton = document.querySelector('.seeButton');
+// const seeButtonf = document.querySelector('.seeButtonf');
+const sButton = document.querySelectorAll('.popButton');
 const xButton = document.querySelectorAll('.xButton');
 
 xButton.forEach((index) => {
@@ -204,20 +242,29 @@ xButton.forEach((index) => {
 
 // See project Button
 
-seeButton.addEventListener('click', () => {
+// seeButton.addEventListener('click', () => {
+  // document.querySelector('.pop_div').classList.remove('pop_X');
+  // popSection.classList.add('pop_active');
+  // body.classList.add('no-scroll');
+  
+// });
+
+// for all buttons 
+// const button = querySelectorAll('.seep')
+sButton.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    document.querySelector('.pop_div').classList.remove('pop_X');
+    popSection.classList.add('pop_active');
+    body.classList.add('no-scroll');
+    const sectionId = `#popCard${index + 1}`;
+    const section = document.querySelector(sectionId);
+    section.scrollIntoView();
+  })
+});
+
+seeButtonf.addEventListener('click', () => {
   document.querySelector('.pop_div').classList.remove('pop_X');
   popSection.classList.add('pop_active');
   body.classList.add('no-scroll');
   
 });
-// const button = querySelectorAll('.seep')
-// seeButton.forEach((button, index) => {
-//   button.addEventListener('click', () => {
-//     document.querySelector('.pop_div').classList.remove('pop_X');
-//     popSection.classList.add('pop_active');
-//     body.classList.add('no-scroll');
-//     const sectionId = `#card${index + 1}`;
-//     const section = document.querySelector(sectionId);
-//     section.scrollIntoView();
-//   })
-// });

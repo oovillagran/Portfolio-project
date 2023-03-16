@@ -137,8 +137,7 @@ a {
 .port:hover,
 .foot .seep:hover,
 .allabout .getmyr:hover,
-.buttonget .get:hover,
-.popButton:hover {
+.buttonget .get:hover {
   background-color: #6070ff;
   color: #fff;
 }
@@ -146,8 +145,7 @@ a {
 .port:focus,
 .foot .seep:focus,
 .allabout .getmyr:focus,
-.buttonget .get:focus,
-.popButton:focus  {
+.buttonget .get:focus {
   background-color: #2230d2;
   color: #fff;
 }
@@ -1067,7 +1065,7 @@ textarea::placeholder {
     height: 100% !important;
   }
 
-  .modal-card__img{
+  .modal-card__img {
     width: 100%;
     height: auto;
   }
@@ -1108,7 +1106,7 @@ textarea::placeholder {
   .popDescription {
     font-size: 0.938rem;
   }
-  
+
   .popUl_card {
     padding: 0 !important;
   }
@@ -1199,10 +1197,9 @@ textarea::placeholder {
   left: 0;
   z-index: 3;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.212);;
+  background-color: rgba(0, 0, 0, 0.212);
   backdrop-filter: blur(7px);
   transform-origin: top;
-  
 }
 
 .pop_div {
@@ -1212,19 +1209,10 @@ textarea::placeholder {
 }
 
 .popUp {
- display: flex;
- transform: scale(1);
- opacity: 1;
- gap: 4rem;
- 
-}
-
-.gridPop {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  row-gap: 1rem;
+  transform: scale(1);
+  opacity: 1;
+  gap: 4rem;
 }
 
 .background_card {
@@ -1237,7 +1225,7 @@ textarea::placeholder {
   align-items: flex-start;
   justify-content: flex-end;
   transform: translateY(1px);
-  transition: all 200 ms;
+  transition: all 200ms;
 }
 
 .pop_mainView_card {
@@ -1270,7 +1258,7 @@ textarea::placeholder {
 .popDetail {
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content: flex-start;
   height: 73rem;
   width: 80vw;
   border-radius: 10px;
@@ -1279,7 +1267,6 @@ textarea::placeholder {
   background-color: #fff;
   opacity: 1 !important;
   padding: 0 1rem;
-  
 }
 
 .scroll {
@@ -1304,7 +1291,7 @@ textarea::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 1rem 1rem 0;
+  padding: 0 1rem 1rem 0;
   margin: 0;
   width: 100%;
 }
@@ -1330,7 +1317,6 @@ textarea::placeholder {
   line-height: 1.25rem;
   color: #7a869a;
   width: 8rem;
-
 }
 
 .xButton {
@@ -1384,12 +1370,12 @@ textarea::placeholder {
   margin-top: 0;
   font-size: 1rem;
   line-height: 1.875rem;
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: #344563;
 }
 
-.popTechs{
+.popTechs {
   margin-top: 0;
 }
 
@@ -1405,15 +1391,6 @@ textarea::placeholder {
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 1rem;
-}
-
-.popSee,
-.popSource {
-  border: 1px #396df2 solid;
-  border-radius: 0.5rem;
-  color: #396df2;
-  font-size: 0.8rem;
-  width: 70%;
 }
 
 #popSee {
@@ -1447,7 +1424,9 @@ textarea::placeholder {
   text-align: center;
   font-size: 0.8rem;
   background-color: #fff;
-  border-radius: 8px;
+  border: 1px #396df2 solid;
+  border-radius: 0.5rem;
+  color: #396df2;
 }
 
 .popsee:active,
@@ -1456,7 +1435,6 @@ textarea::placeholder {
   color: #6070ff;
   text-decoration: none;
 }
-
 
 .pop_X {
   opacity: 0;
@@ -1470,9 +1448,13 @@ textarea::placeholder {
 }
 
 .gridPop {
-  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4, 1fr);
   row-gap: 9rem;
   margin: 9rem 2rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card {
@@ -1486,6 +1468,15 @@ textarea::placeholder {
   border: 1.5px solid #396df2;
   border-radius: 7px;
   cursor: pointer;
-  background: #fff;
   color: #396df2;
+}
+
+.popButton:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.popButton:focus {
+  background-color: #2230d2;
+  color: #fff;
 }

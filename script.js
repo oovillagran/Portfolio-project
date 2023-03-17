@@ -248,8 +248,25 @@ sButton.forEach((button, index) => {
   });
 });
 
-
 // Client Side Validation
 
 const form = document.getElementById('contact_form');
 
+function clientValidationByEmail() {
+  const email = document.getElementById('email');
+
+  if (email.value !== email.value.toLowerCase()) {
+    alert('E-mail must be in lower case 😉');
+    return false;
+  }
+  return true;
+};
+
+form.addEventListener('submit', function(event) {
+
+  event.preventDefault();
+
+  if (clientValidationByEmail()) {
+    form.submit();
+  }
+});

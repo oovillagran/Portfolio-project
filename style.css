@@ -11,10 +11,6 @@ html {
 
 body {
   overflow-x: hidden;
-<<<<<<< HEAD
-  top: 0;
-=======
->>>>>>> main
   margin: 0;
 }
 
@@ -1142,7 +1138,7 @@ textarea::placeholder {
   }
 
   .popDetail {
-    height: 100vh !important;
+    min-height: 100vh !important;
   }
 
   .popSee,

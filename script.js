@@ -1,4 +1,4 @@
-// PopUp Window Details
+// PopUp Object
 
 const popObjects = [
   {
@@ -130,11 +130,7 @@ hamburger.addEventListener('click', () => {
   barDiv.style.height = '0.5rem';
   barDiv.style.background = '#000';
   barDiv.style.marginLeft = '35%';
-<<<<<<< HEAD
-  barDiv.style.marginTop = '46rem'
-=======
   barDiv.style.marginTop = '46rem';
->>>>>>> main
   barDiv.style.position = 'absolute';
 });
 
@@ -229,8 +225,6 @@ popObjects.map((postData, index) => {
 // buttons
 
 const popSection = document.querySelector('.pop_section');
-// const seeButton = document.querySelector('.seeButton');
-// const seeButtonf = document.querySelector('.seeButtonf');
 const sButton = document.querySelectorAll('.popButton');
 const xButton = document.querySelectorAll('.xButton');
 
@@ -244,15 +238,6 @@ xButton.forEach((index) => {
 
 // See project Button
 
-// seeButton.addEventListener('click', () => {
-  // document.querySelector('.pop_div').classList.remove('pop_X');
-  // popSection.classList.add('pop_active');
-  // body.classList.add('no-scroll');
-  
-// });
-
-// for all buttons 
-// const button = querySelectorAll('.seep')
 sButton.forEach((button, index) => {
   button.addEventListener('click', () => {
     document.querySelector('.pop_div').classList.remove('pop_X');

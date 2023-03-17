@@ -15,29 +15,32 @@
 </head>
 
 <body>
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KP6MS5K"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="backing">
-    <header class="header">
-      <a href="#" class="name">OSCAR</a>
-      <nav class="flex-nav">
-        <a href="#" class="toggleNav">Menu</a>
-        <ul class="open">
-          <li class="mhead"><a class="port" href="#">Portfolio</a></li>
-          <li class="mhead"><a class="port" href="#">About</a></li>
-          <li class="mhead"><a class="port" href="#">Contact</a></li>
-          </ul>
-          <div class="hamburguer">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-      </nav>
+    <header class="header header-main">
+        <nav class="flex-nav navbar">
+          <a href="#" class="name">OSCAR</a>
+          <ul class="open nav-menu">
+            <li class="mhead nav-item">
+              <a class="port nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="mhead nav-item">
+              <a class="port nav-link" href="#">About</a>
+            </li>
+            <li class="mhead nav-item">
+              <a class="port nav-link" href="#">Contact</a>
+            </li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+        </nav>
     </header>
 
-    <section class="main">  
+    <section class="main main-section">  
       <div class="introduction">
-        <h1 class="name__int">I’m Alexandra<br>Glad to see you!</h1>
+        <h1 class="name__int">I’m Oscar<br>Glad to see you!</h1>
         <p class="desc__int">I’m a software developer! I can help you build a product , feature or website 
           Look through some of my work and experience! If you like what you see and have a 
           project you need coded, don’t hesitate to contact me.</p>
@@ -77,10 +80,10 @@
     </section>
 
     <!-- Second Page  of the project -->
-    <section class="profile">
+    <section class="profile" id="portfolio">
       <ul class="exp">
         <li class="profilexp grid__0">
-          <img class="banner flex__0" src="images/Snapshoot Portfolio 2.svg" alt="An Ilustration of a Web Page of Bionic Forms">
+          <img class="banner flex__0" id="portfolio-img" src="images/Snapshoot Portfolio 2.svg" alt="An Ilustration of a Web Page of Bionic Forms">
           <div class="mainfo flex__1">
             <h2 class="tonic" id="title">Tonic</h2>
             <div class="sub">
@@ -279,7 +282,7 @@
     </section>
     <!-- About Me-->
     <section class="aboutme">
-      <div class="allaboutme">
+      <div class="allaboutme" id="aboutme">
         <div class="allabout">
           <h2 class="tabout">About<br>Myself</h2>
           <p class="pabout">Hello I’m a software developer! I can help you build a product , 
@@ -358,7 +361,7 @@
       </div>  
     </section>
     <!-- Contact Me-->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contactme">
         <h2 class="contact_ask">Contact me</h2>
         <p class="contact_exp">If you have an application you are interested in developing, a feature 
@@ -378,7 +381,7 @@
             </li>
             <!-- Textarea -->
             <li id="message">
-              <label style="margin-top: 20px;" for="msg"></label>
+              <label class="message__form" for="msg"></label>
               <textarea class="textarea" name="msg" id="msg"  autocomplete="off" cols="30" rows="4" maxlength="500" placeholder="Write your message here"></textarea>
             </li>
             <!-- Get in Touch button -->
@@ -397,5 +400,6 @@
     </footer>
     
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

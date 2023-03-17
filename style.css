@@ -5,12 +5,24 @@
   font-family: "Poppins", sans-serif;
 }
 
+.xOption {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: absolute;
+  text-align: right;
+  padding-right: 4rem;
+  top: 3rem;
+  cursor: pointer;
+}
+
 html {
   font-size: 16px;
 }
 
 body {
   overflow-x: hidden;
+  margin: 0;
 }
 
 .backing {
@@ -128,6 +140,10 @@ a {
   font-weight: 500;
 }
 
+.nav-link {
+  transition: 0.7s ease;
+}
+
 .port:hover,
 .foot .seep:hover,
 .allabout .getmyr:hover,
@@ -225,10 +241,16 @@ h6 {
 }
 
 .header {
-  /* border: 1px solid yellow; */
   display: flex;
   margin-top: 0;
   background: #fff;
+}
+
+.flex-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .flex-nav ul {
@@ -247,7 +269,6 @@ h6 {
 .social_icons {
   list-style: none;
   display: flex;
-  align-items: left;
   gap: 0.75rem;
   padding: 0;
 }
@@ -267,7 +288,7 @@ h6 {
   margin-left: calc(60% - 500px);
 }
 
-.hamburguer {
+.hamburger {
   display: none;
 }
 
@@ -275,7 +296,8 @@ h6 {
   display: block;
   width: 25px;
   height: 3px;
-  margin: 5px 0;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease;
   background-color: #6070ff;
 }
@@ -419,7 +441,6 @@ h6 {
 .social_icons__about {
   list-style: none;
   display: flex;
-  align-items: left;
   gap: 0.75rem;
   padding: 0;
   margin-left: 0;
@@ -430,13 +451,11 @@ h6 {
   margin: 0.375rem 0;
   padding: 1.5rem 0;
   width: 35rem;
-  align-items: left;
   list-style-type: none;
 }
 
 .app {
   display: flex;
-  align-items: left;
   justify-content: start;
   gap: 1rem;
 }
@@ -592,6 +611,10 @@ input::placeholder {
   font-size: 1.063rem;
   line-height: 1.25rem;
   padding: 1rem;
+}
+
+.message__form {
+  margin-top: 1.25rem;
 }
 
 textarea::placeholder {
@@ -835,21 +858,17 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 768px)  and (orientation: portrait) {
-  .main::before {
+  .main {
     background-image: url(images/header-shapes\ mobile.svg);
+    display: block;
   }
 
   .flex-nav ul {
     flex-wrap: wrap;
-    display: none;
   }
 
   .flex-nav li {
     flex-basis: 100%;
-  }
-
-  .main {
-    display: block;
   }
 
   .name {
@@ -864,10 +883,35 @@ textarea::placeholder {
     margin-left: 5%;
   }
 
-  .hamburguer {
+  .hamburger {
     display: block;
     width: 75px;
     cursor: pointer;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 30px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 0;
+    min-height: 100vh;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-link {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    text-align: left;
+    margin-left: 1.75rem;
   }
 
   .mainfo {
@@ -875,7 +919,6 @@ textarea::placeholder {
   }
 
   .profilexp {
-    /* max-height: 100vh; */
     display: flex;
     flex-direction: column;
   }

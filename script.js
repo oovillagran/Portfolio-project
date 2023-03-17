@@ -262,8 +262,7 @@ function clientValidationByEmail() {
   return true;
 }
 
-form.addEventListener('submit',(e) => {
-
+form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   if (clientValidationByEmail()) {

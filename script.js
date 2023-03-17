@@ -210,7 +210,7 @@ popObjects.map((postData, index) => {
             </ul>
           </div>
           <div class="pop_buttons_see">
-            <a href="${postData.seeLive}" target="_blank" rel="noopener noreferrer" class="popSee">See live <img src="images/pop/See3.png" alt="Elipse Icon" id="popSee"></a>
+            <a href="${postData.seeLive}" target="_blank" rel="noopener noreferrer" class="popSee">See live <img src="images/pop/liveicon.svg" alt="Elipse Icon" id="popSee"></a>
             <a href="${postData.seeSource}" target="_blank" rel="noopener noreferrer" class="popSource">See source <img src="images/pop/Source.svg" alt="gitHub Icon" id="popSource"></a>
           </div>
         </div>

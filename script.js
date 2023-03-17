@@ -54,7 +54,6 @@ const popObjects = [
 // hamburguer menu
 
 const hamburger = document.querySelector('.hamburger');
-const header = document.querySelector('header');
 const backing = document.querySelector('.backing');
 const body = document.querySelector('body');
 const popDiv = document.createElement('div');
@@ -86,11 +85,10 @@ hamburger.addEventListener('click', () => {
   headerMenu.style.filter = 'blur(6px)';
   mSection.style.filter = 'blur(6px)';
   body.style.overflow = 'hidden';
-    
   body.insertBefore(popDiv, backing);
   popDiv.appendChild(uList);
 
-  for (let i = 0; i < menuOption.length; i++) {
+  for (let i = 0; i < menuOption.length; i += 1) {
     const listElement = document.createElement('li');
     const listRef = document.createElement('a');
     listRef.href = refElements[i];
@@ -107,7 +105,7 @@ hamburger.addEventListener('click', () => {
   });
 
   const refTags = document.querySelectorAll('body div ul li a');
-  for ( let i = 0; i < refTags.length; i++) {
+  for (let i = 0; i < refTags.length; i += 1) {
     refTags[i].classList.add(`refTags${i}`);
   }
 
@@ -132,7 +130,11 @@ hamburger.addEventListener('click', () => {
   barDiv.style.height = '0.5rem';
   barDiv.style.background = '#000';
   barDiv.style.marginLeft = '35%';
+<<<<<<< HEAD
   barDiv.style.marginTop = '46rem'
+=======
+  barDiv.style.marginTop = '46rem';
+>>>>>>> main
   barDiv.style.position = 'absolute';
 });
 

@@ -260,11 +260,11 @@ function clientValidationByEmail() {
     return false;
   }
   return true;
-};
+}
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit',(e) => {
 
-  event.preventDefault();
+  e.preventDefault();
 
   if (clientValidationByEmail()) {
     form.submit();

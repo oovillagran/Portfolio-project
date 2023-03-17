@@ -30,7 +30,7 @@ const popObjects = [
     subtitle: 'FACEBOOK',
     experience: ['Full Stack Dev', '2015'],
     image: './images/pop/Portfolio1.svg',
-    description1: 'Exploring the future of media in Facebook\'\s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    description1: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
     tech: ['html', 'Ruby on rails', 'css', 'javaScript'],
     seeLive: 'https://oovillagran.github.io/Portfolio-project/',
@@ -48,7 +48,7 @@ const popObjects = [
     seeLive: 'https://oovillagran.github.io/Portfolio-project/',
     seeSource: 'https://github.com/oovillagran',
     class: 'popCard4',
-  }
+  },
 ];
 
 // hamburguer menu
@@ -142,7 +142,6 @@ const popContainer = document.querySelector('.gridPop');
 popObjects.forEach((postData) => {
   const card = document.createElement('div');
   card.classList.add('card', postData.class);
-  
   card.innerHTML = `
     <div class="background_card">
         
@@ -181,7 +180,7 @@ popObjects.map((postData, index) => {
   popDetail.setAttribute('id', postData.class);
   popDetail.innerHTML = `
     <div id="popInfo">
-      <style>.popDetail:nth-child(${index +1}) .pImage {background-image: url(${postData.image}) !important;}</style>
+      <style>.popDetail:nth-child(${index + 1}) .pImage {background-image: url(${postData.image}) !important;}</style>
       <div class="pmain">
         <h2 class="pop-title">${postData.title}</h2>
         <button type="button" class="xButton"></button>
@@ -231,7 +230,7 @@ const xButton = document.querySelectorAll('.xButton');
 xButton.forEach((index) => {
   index.addEventListener('click', () => {
     document.querySelector('.pop_div').classList.add('pop_X');
-    setTimeout(() => {popSection.classList.remove('pop_active');},300);
+    setTimeout(() => { popSection.classList.remove('pop_active'); }, 300);
     body.classList.remove('no-scroll');
   });
 });
@@ -246,12 +245,5 @@ sButton.forEach((button, index) => {
     const sectionId = `#popCard${index + 1}`;
     const section = document.querySelector(sectionId);
     section.scrollIntoView();
-  })
-});
-
-seeButtonf.addEventListener('click', () => {
-  document.querySelector('.pop_div').classList.remove('pop_X');
-  popSection.classList.add('pop_active');
-  body.classList.add('no-scroll');
-  
+  });
 });

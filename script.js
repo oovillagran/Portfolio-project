@@ -269,3 +269,42 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+// Preserve data in browser
+
+const formName = document.getElementById('nameid');
+const formEmail = document.getElementById('email');
+const formMessage = document.getElementById('msg');
+
+const formData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+function getName() {
+  formData.name = formName.value;
+  localStorage.setItem('Object', JSON.stringify(formData));
+}
+
+function getEmail() {
+  formData.email = formEmail.value;
+  localStorage.setItem('Object', JSON.stringify(formData));
+}
+
+function getMessage() {
+  formData.message = formMessage.value;
+  localStorage.setItem('Object', JSON.stringify(formData));
+}
+
+formName.addEventListener('input', getName);
+formEmail.addEventListener('input', getEmail);
+formMessage.addEventListener('input', getMessage);
+
+const formDataUpDated = JSON.parse(localStorage.getItem('Object'));
+
+formName.value = formDataUpDated.name;
+formEmail.value = formDataUpDated.email;
+formMessage.value = formDataUpDated.message;
+console.log(formDataUpDated);
+

@@ -36,10 +36,6 @@ body {
   z-index: -1;
 }
 
-/* .modal {
-  background: #fff;
-} */
-
 .main {
   display: flex;
   flex-direction: column;
@@ -215,7 +211,6 @@ h6 {
 }
 
 .name {
-  /* border: 1px solid orange; */
   display: flex;
   margin-left: 6.25rem;
   font-weight: 800;
@@ -243,7 +238,6 @@ h6 {
 }
 
 .flex-nav ul {
-  /* border: 1px solid black; */
   display: flex;
   margin: 0;
   padding: 0;
@@ -263,14 +257,12 @@ h6 {
 }
 
 .introduction {
-  /* border: 1px solid red; */
   margin-left: 14%;
   width: 72%;
   margin-bottom: 20rem;
 }
 
 .info ul {
-  /* border: 1px solid blue; */
   display: flex;
   color: #505f79;
   width: 60%;
@@ -327,7 +319,6 @@ h6 {
 }
 
 .profilexp {
-  /* margin-left: 1.5rem; */
   padding: 1rem 0 1.5rem 0;
   display: flex;
   align-items: flex-start;
@@ -393,7 +384,6 @@ h6 {
 }
 
 .allaboutme {
-  /* margin-left: 1%; */
   display: flex;
   justify-content: flex-start;
   width: 100%;
@@ -406,12 +396,10 @@ h6 {
 }
 
 .tabout {
-  /* width: 76%; */
   margin-left: 12.5%;
 }
 
 .pabout {
-  /* width: 76%; */
   margin-left: 12.5%;
   font-size: 1rem;
   font-weight: 400;
@@ -567,8 +555,6 @@ h6 {
 .ijs,
 .ihtml,
 .icss {
-  /* display: flex;
-  flex-direction: column; */
   background: #f7f7f9;
   width: 8rem;
 }
@@ -578,14 +564,12 @@ h6 {
 }
 
 .appt {
-  /* text-align: left; */
   font-size: 0.938rem;
   font-weight: 500;
   line-height: 1.25rem;
 }
 
 .touch {
-  /* padding-left: 43%; */
   color: #396df2;
   font-size: 1.063rem;
   font-weight: 500;
@@ -785,7 +769,6 @@ textarea::placeholder {
   }
 
   .allaboutme {
-    /* max-height: 57.75rem; */
     gap: 20px;
   }
 
@@ -800,7 +783,6 @@ textarea::placeholder {
   }
 
   .pabout {
-    /* width: 77%; */
     margin-left: 8rem;
   }
 
@@ -957,7 +939,6 @@ textarea::placeholder {
   }
 
   .allaboutme {
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1271,10 +1252,6 @@ textarea::placeholder {
 .scroll {
   scroll-snap-align: center !important;
 }
-
-/* .no-scroll{
-  overflow: hidden !important;
-} */
 
 .pImage {
   display: flex;

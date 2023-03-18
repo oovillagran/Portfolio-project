@@ -1480,6 +1480,8 @@ textarea::placeholder {
   color: #fff;
 }
 
+/* client side validation message */
+
 #error-mssg {
   color: #fff;
 }

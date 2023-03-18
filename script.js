@@ -251,12 +251,14 @@ sButton.forEach((button, index) => {
 // Client Side Validation
 
 const form = document.getElementById('contact_form');
+const error =document.getElementById('error-mssg');
+
 
 function clientValidationByEmail() {
   const email = document.getElementById('email');
 
   if (email.value !== email.value.toLowerCase()) {
-    alert('E-mail must be in lower case 😉');
+    error.innerHTML = 'E-mail must be in lowercase, the form will not be sent.';
     return false;
   }
   return true;
@@ -268,7 +270,7 @@ form.addEventListener('submit', (e) => {
   if (clientValidationByEmail()) {
     form.submit();
   }
-});
+})
 
 // Preserve data in browser
 
@@ -276,35 +278,20 @@ const formName = document.getElementById('nameid');
 const formEmail = document.getElementById('email');
 const formMessage = document.getElementById('msg');
 
-const formData = {
-  name: '',
-  email: '',
-  message: '',
-};
+const savedData = localStorage.getItem('formData');
 
-function getName() {
-  formData.name = formName.value;
-  localStorage.setItem('Object', JSON.stringify(formData));
+if (savedData) {
+  const { name, email, message } = JSON.parse(savedData);
+  formName.value = name;
+  formEmail.value = email;
+  formMessage.value = message;
 }
 
-function getEmail() {
-  formData.email = formEmail.value;
-  localStorage.setItem('Object', JSON.stringify(formData));
-}
-
-function getMessage() {
-  formData.message = formMessage.value;
-  localStorage.setItem('Object', JSON.stringify(formData));
-}
-
-formName.addEventListener('input', getName);
-formEmail.addEventListener('input', getEmail);
-formMessage.addEventListener('input', getMessage);
-
-const formDataUpDated = JSON.parse(localStorage.getItem('Object'));
-
-formName.value = formDataUpDated.name;
-formEmail.value = formDataUpDated.email;
-formMessage.value = formDataUpDated.message;
-console.log(formDataUpDated);
-
+form.addEventListener('input', () => {
+  const formData = {
+    name: formName.value,
+    email: formEmail.value,
+    message: formMessage.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+});

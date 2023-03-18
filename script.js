@@ -251,12 +251,14 @@ sButton.forEach((button, index) => {
 // Client Side Validation
 
 const form = document.getElementById('contact_form');
+const error =document.getElementById('error-mssg');
+
 
 function clientValidationByEmail() {
   const email = document.getElementById('email');
 
   if (email.value !== email.value.toLowerCase()) {
-    alert('E-mail must be in lower case 😉');
+    error.innerHTML = 'E-mail must be in lowercase, the form will not be sent.';
     return false;
   }
   return true;

@@ -181,7 +181,7 @@
         <p class="contact_exp">If you have an application you are interested in developing, a feature 
           that you need built or a project that needs coding. I’d love to help with it</p>
         <!-- Form -->
-        <form action="https://formspree.io/f/xdovzepk" method="post">
+        <form action="https://formspree.io/f/xdovzepk" method="post" id="contact_form">
           <ul id="survey">
             <!-- Name field -->
             <li id="name">
@@ -189,10 +189,11 @@
               <input id="name" name="name" type="text" autocomplete="off" placeholder="Alexandra Loremipsum" required maxlength="30">
             </li>
             <!-- Email field -->
-            <li id="email">
+            <li id="email_li">
               <label id="email-label" for="email"></label>
               <input  name="email" id="email" type="email" autocomplete="off" placeholder="alexandra@gmail.com" required>
-            </li>
+              
+              </li>
             <!-- Textarea -->
             <li id="message">
               <label class="message__form" for="msg"></label>
@@ -202,6 +203,7 @@
             <li id="touch" class="touch">
               <div class="buttonget">
                 <button type="submit" id="Get-in-Touch" class="get">Get in touch</button>
+                <br><span id="error-mssg"></span>
               </div>
               </li>
           </ul>

@@ -247,3 +247,26 @@ sButton.forEach((button, index) => {
     section.scrollIntoView();
   });
 });
+
+// Client Side Validation
+
+const form = document.getElementById('contact_form');
+const error = document.getElementById('error-mssg');
+
+function clientValidationByEmail() {
+  const email = document.getElementById('email');
+
+  if (email.value !== email.value.toLowerCase()) {
+    error.innerHTML = 'E-mail must be in lowercase, the form will not be sent.';
+    return false;
+  }
+  return true;
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  if (clientValidationByEmail()) {
+    form.submit();
+  }
+});

@@ -251,8 +251,7 @@ sButton.forEach((button, index) => {
 // Client Side Validation
 
 const form = document.getElementById('contact_form');
-const error =document.getElementById('error-mssg');
-
+const error = document.getElementById('error-mssg');
 
 function clientValidationByEmail() {
   const email = document.getElementById('email');
@@ -270,7 +269,7 @@ form.addEventListener('submit', (e) => {
   if (clientValidationByEmail()) {
     form.submit();
   }
-})
+});
 
 // Preserve data in browser
 

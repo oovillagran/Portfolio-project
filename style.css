@@ -1209,7 +1209,7 @@ textarea::placeholder {
 }
 
 .pop_mainView_card {
-  margin: 0 1.5rem;
+  margin: auto 1.5rem;
   flex: 0.5;
 }
 

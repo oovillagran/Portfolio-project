@@ -5,7 +5,8 @@ const popObjects = [
     title: 'Awesome books',
     subtitle: 'Microverse',
     experience: ['Front End Dev', '2023'],
-    image: './images/screenshots/MainPage4.png',
+    image: './images/screenshots/BooksListP.png',
+    image1: './images/screenshots/BooksList.png',
     description1: 'An application that allows users to add or remove books from a list.',
     description: 'Awesome Books is a website that allows users to add/remove books from a list. It was achieved by using JavaScript objects and arrays. Dynamically modify the DOM and added basic events, using ES6 sintax, using modules into javascript code, and use of arrow functions.',
     tech: ['html', 'css', 'javaScript', 'Bootstrap', 'ES6 syntax'],
@@ -180,7 +181,7 @@ popObjects.map((postData, index) => {
   popDetail.setAttribute('id', postData.class);
   popDetail.innerHTML = `
     <div id="popInfo">
-      <style>.popDetail:nth-child(${index + 1}) .pImage {background-image: url(${postData.image}) !important;}</style>
+      <style>.popDetail:nth-child(${index + 1}) .pImage {background-image: url(${postData.image1}) !important;}</style>
       <div class="pmain">
         <h2 class="pop-title">${postData.title}</h2>
         <button type="button" class="xButton"></button>

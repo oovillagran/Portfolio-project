@@ -2,15 +2,16 @@
 
 const popObjects = [
   {
-    title: 'Tonic',
-    subtitle: 'CANOPY',
-    experience: ['Back End Dev', '2015'],
-    image: './images/pop/Portfolio5.svg',
-    description1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
-    tech: ['html', 'css', 'javaScript', 'Ruby', 'Bootstrap'],
-    seeLive: 'https://oovillagran.github.io/Portfolio-project/',
-    seeSource: 'https://github.com/oovillagran',
+    title: 'Awesome books',
+    subtitle: 'Microverse',
+    experience: ['Front End Dev', '2023'],
+    image: './images/screenshots/MainPage.png',
+    image1: './images/screenshots/BooksList.png',
+    description1: 'An application that allows users to add or remove books from a list, not subscription is needed nor online conection.',
+    description: 'Awesome Books is a website that allows users to add/remove books from a list. It was achieved by using JavaScript objects and arrays. Dynamically modify the DOM and added basic events, using ES6 sintax, using modules into javascript code, and use of arrow functions.',
+    tech: ['html', 'css', 'javaScript', 'Bootstrap', 'ES6 syntax'],
+    seeLive: 'https://oovillagran.github.io/AwesomeBooks/',
+    seeSource: 'https://github.com/oovillagran/AwesomeBooks-ES6',
     class: 'popCard1',
   },
   {
@@ -180,7 +181,7 @@ popObjects.map((postData, index) => {
   popDetail.setAttribute('id', postData.class);
   popDetail.innerHTML = `
     <div id="popInfo">
-      <style>.popDetail:nth-child(${index + 1}) .pImage {background-image: url(${postData.image}) !important;}</style>
+      <style>.popDetail:nth-child(${index + 1}) .pImage {background-image: url(${postData.image1}) !important;}</style>
       <div class="pmain">
         <h2 class="pop-title">${postData.title}</h2>
         <button type="button" class="xButton"></button>

@@ -214,14 +214,35 @@ h6 {
   display: flex;
   margin-left: 6.25rem;
   font-weight: 800;
+  font-size: 1rem;
   color: #6070ff;
+  animation: logo 4s infinite;
+  transition: font-size 2s;
+}
+
+@keyframes logo {
+  0% { color: #091e42; }
+  25% { color: #172b4d; }
+  50% { color: #396df2; }
+  75% { color: #6070ff; }
+  100% { color: #2230d2; }
+}
+
+.name:hover {
+  font-size: 2rem;
 }
 
 .mhead {
   list-style-type: none;
-  font-weight: 500;
+  font-weight: 510;
   font-size: 0.938rem;
   line-height: 1.25rem;
+  transition: font-size 2s, color 2s, background-color 2s;
+}
+
+.mhead:hover {
+  font-size: 1.25rem;
+  background-color: #6070ff;
 }
 
 .header {
@@ -611,7 +632,7 @@ textarea::placeholder {
 
   .name__int {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 790;
     line-height: 3.75rem;
   }
 

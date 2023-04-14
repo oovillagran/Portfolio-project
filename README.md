@@ -59,9 +59,9 @@
 </details>
 
 <details>
-  <summary>JavaScripts</summary>
+  <summary>JavaScript</summary>
   <ul>
-    <li>JavaScripts</li>
+    <li>JavaScript</li>
   </ul>
 </details>
 

@@ -71,7 +71,7 @@
 
 
 - **Creating branches on repositories.**
-- **Use of linter on HTML&CSS project.**
+- **Use of linter on HTML&CSS&javaScript project.**
 - **Write a correct descriptive README file.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -58,6 +58,13 @@
   </ul>
 </details>
 
+<details>
+  <summary>JavaScripts</summary>
+  <ul>
+    <li>JavaScripts</li>
+  </ul>
+</details>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>

@@ -37,7 +37,7 @@
 # 📖 Portfolio Project: Setup and mobile first<a name="about-project"></a>
 
 
-**Portfolio Project: Setup and mobile first** is the start point in order to create my own portfolio web site. This project uses the template number 1 from the **templates in Figma**.
+**Portfolio Project: Setup and mobile first** is the start point in order to create my own portfolio web site. This project uses the template number 1 from the **templates in Figma**. This was my first project in Microverse in the Full Stack Web Development Program.
 
 ## 🛠 Built With <a name="built-with"></a>
 
